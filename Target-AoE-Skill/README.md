@@ -5,7 +5,7 @@
 ### DESCRIPTION:
 
 - Targets all enemies in the specified radius
-- Has taunting if taunting chance is greater than 0
+- Has an optional AoE taunting effect if taunting chance is greater than 0
 - Spawns an AoE effect
 
 ### INSTRUCTIONS: 
