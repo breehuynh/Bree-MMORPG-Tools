@@ -1,4 +1,4 @@
-## Target Taunt AoE Skill
+## Target AoE Skill
 
 *Made by bobatea#9400 on Discord!*
 
