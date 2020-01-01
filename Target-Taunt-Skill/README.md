@@ -4,7 +4,7 @@
 
 ### DESCRIPTION:
 
-- Taunts targetted enemy if player is within enemy's weapon range
+- Taunts targetted enemy if player is within enemy's range
 - Has taunting if taunting chance is greater than 0
 - Spawns a Taunt effect if successfully taunted
 
