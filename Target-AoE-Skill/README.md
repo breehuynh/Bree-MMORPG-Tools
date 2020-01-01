@@ -6,6 +6,7 @@
 
 - Targets all enemies in the specified radius
 - Has taunting if taunting chance is greater than 0
+- Spawns an AoE effect
 
 ### INSTRUCTIONS: 
 
