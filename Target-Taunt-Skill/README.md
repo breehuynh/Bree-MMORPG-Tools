@@ -2,8 +2,6 @@
 
 *Made by bobatea#9400 on Discord!*
 
-**ONLY FOR UMMORPG COMPONENTS EDITIONS**
-
 ### DESCRIPTION:
 
 - Targets all enemies in the specified radius
