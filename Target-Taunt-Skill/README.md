@@ -10,8 +10,9 @@
 
 ### INSTRUCTIONS: 
 
-1. Add a new "Taunt Attack" animation state to your Player's animator controller
-2. Add a new animation bool parameter called "Taunt Attack" to your Player's animator controller
-3. Create a transition from the "Entry" state to the new "Taunt Attack" state with the conditions that "Taunt Attack" == True and "CASTING" == True
-4. Create a transition back to the "Grounded" state with the conditions that "Taunt Attack" == False and "CASTING" == False
-5. Add the Taunt Attack prefab to the Network Manager's Spawnable Prefabs list
+1. Install via the .unitypackage or drag and drop the files to your project
+2. Add a new "Taunt Attack" animation state to your Player's animator controller
+3. Add a new animation bool parameter called "Taunt Attack" to your Player's animator controller
+4. Create a transition from the "Entry" state to the new "Taunt Attack" state with the conditions that "Taunt Attack" == True and "CASTING" == True
+5. Create a transition back to the "Grounded" state with the conditions that "Taunt Attack" == False and "CASTING" == False
+6. Add the Taunt Attack prefab to the Network Manager's Spawnable Prefabs list
