@@ -1,4 +1,4 @@
-# Bree's (Boba) MMORPG Tools
+# Bree's MMORPG Tools
 
 *Tools to help you develop your MMORPG.*
 
