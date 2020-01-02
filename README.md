@@ -5,12 +5,13 @@
 **Free and open source. May be used in commercial games.**
 
 ### Roadmap:
-- CE V1.1
-  *Added Target Taunt Skill
-  *Added AoE Target skill
-- *future*
-  *Work on improved Monster Brain AI
-  *Work on improved NPC Brain AI
+* CE V1.1
+ * Added Target Taunt Skill
+ * Added AoE Target skill
+ 
+* *future*
+ * Work on improved Monster Brain AI
+ * Work on improved NPC Brain AI
   
 # Boba uMMORPG LTS Tools v1.83
 
