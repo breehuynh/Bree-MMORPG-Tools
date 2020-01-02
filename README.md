@@ -6,8 +6,8 @@
 
 ### Roadmap:
 * CE V1.1
- * Added Target Taunt Skill
- * Added AoE Target skill
+  * Added Target Taunt Skill
+  * Added AoE Target skill
  
 * *future*
  * Work on improved Monster Brain AI
