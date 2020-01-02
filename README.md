@@ -1,4 +1,4 @@
-# Boba MMORPG Tools
+# Boba uMMORPG Tools v1.1
 
 *Tools to help you develop your MMORPG.*
 
