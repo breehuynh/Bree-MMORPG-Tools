@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 336be78daf106489399742b234f7814b, type: 3}
+  m_Name: Taunt Attack
+  m_EditorClassIdentifier: 
+  followupDefaultAttack: 0
+  toolTip: '<b>{NAME} Lvl {LEVEL}</b>
+
+    Taunt Attack
+
+
+    Damage: {DAMAGE}
+
+    Taunt Chance: {TAUNTCHANCE}%
+
+    Stun Chance: {STUNCHANCE}%
+
+    Stun Time: {STUNTIME}s
+
+    Cast Time: {CASTTIME}
+
+    Cooldown: {COOLDOWN}
+
+    Cast Range: {CASTRANGE}
+
+    Mana Costs: {MANACOSTS}'
+  image: {fileID: 21300000, guid: de678ce1a0480406f95679d29d972c55, type: 3}
+  learnDefault: 1
+  showCastBar: 1
+  cancelCastIfTargetDied: 1
+  allowMovement: 1
+  predecessor: {fileID: 0}
+  predecessorLevel: 1
+  requiredWeaponCategory: 
+  requiredLevel:
+    baseValue: 0
+    bonusPerLevel: 0
+  requiredSkillExperience:
+    baseValue: 0
+    bonusPerLevel: 0
+  maxLevel: 1
+  manaCosts:
+    baseValue: 0
+    bonusPerLevel: 0
+  castTime:
+    baseValue: 0.5
+    bonusPerLevel: 0
+  cooldown:
+    baseValue: 0
+    bonusPerLevel: 0
+  castRange:
+    baseValue: 3
+    bonusPerLevel: 0
+  castSound: {fileID: 0}
+  damage:
+    baseValue: 1
+    bonusPerLevel: 0
+  stunChance:
+    baseValue: 0
+    bonusPerLevel: 0
+  stunTime:
+    baseValue: 0
+    bonusPerLevel: 0
+  effect: {fileID: 114038526120822526, guid: 8e860c1020c584ea4be31af7d502c8e6, type: 3}
+  tauntChance:
+    baseValue: 1
+    bonusPerLevel: 0
