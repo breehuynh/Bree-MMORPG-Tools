@@ -10,8 +10,8 @@
   * Added AoE Target skill
  
 * *future*
- * Work on improved Monster Brain AI
- * Work on improved NPC Brain AI
+  * Work on improved Monster Brain AI
+  * Work on improved NPC Brain AI
   
 # Boba uMMORPG LTS Tools v1.83
 
