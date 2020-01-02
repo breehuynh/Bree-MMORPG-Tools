@@ -4,6 +4,8 @@
 
 **Free and open source. May be used in commercial games.**
 
+------
+
 ### Roadmap:
 * CE V1.1
   * Added Target Taunt Skill
@@ -14,6 +16,7 @@
   * Work on improved NPC Brain AI
   
 # Boba uMMORPG LTS Tools v1.83
+------
 
 ### Contact Information
 Discord: bobatea#9400
