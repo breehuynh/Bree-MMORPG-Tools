@@ -1,4 +1,5 @@
 # Boba uMMORPG CE Tools v1.1
+======
 
 *Tools to help you develop your MMORPG.*
 
@@ -15,7 +16,10 @@
   * Work on improved Monster Brain AI
   * Work on improved NPC Brain AI
   
+------
+  
 # Boba uMMORPG LTS Tools v1.83
+
 ------
 
 ### Contact Information
