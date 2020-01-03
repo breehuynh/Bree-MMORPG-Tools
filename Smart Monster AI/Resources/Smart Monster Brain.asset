@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbd785ae025f7437284cae708cb5d293, type: 3}
   m_Name: Smart Monster Brain
   m_EditorClassIdentifier: 
-  moveProbability: 0.1
+  moveProbability: 0
   moveDistance: 10
   followDistance: 20
   attackToMoveRangeRatio: 0.8
+  suspicion: 1
+  suspicionTime: 3
+  patrolPath: 1
+  patrolSpeedFraction: 0.2
+  waypointTolerance: 1
+  waypointDwellTime: 3

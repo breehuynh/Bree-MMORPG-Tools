@@ -14,6 +14,14 @@ public class SmartMonsterBrain : CommonBrain
     public float followDistance = 20;
     [Range(0.1f, 1)] public float attackToMoveRangeRatio = 0.8f; // move as close as 0.8 * attackRange to a target
 
+    [Header("Smart AI")]
+    public bool suspicion = true;
+    public float suspicionTime = 3f;
+    public bool patrolPath = true;
+    [Range(0, 1)] public float patrolSpeedFraction = 0.2f;
+    public float waypointTolerance = 1f;
+    public float waypointDwellTime = 3f;
+
     // events //////////////////////////////////////////////////////////////////
     public bool EventDeathTimeElapsed(SmartMonster smartMonster) =>
         smartMonster.state == "DEAD" && NetworkTime.time >= smartMonster.deathTimeEnd;
@@ -27,6 +35,9 @@ public class SmartMonsterBrain : CommonBrain
     public bool EventTargetTooFarToFollow(SmartMonster smartMonster) =>
         smartMonster.target != null &&
         Vector3.Distance(smartMonster.startPosition, Utils.ClosestPoint(smartMonster.target, smartMonster.transform.position)) > followDistance;
+
+    public bool EventPatrolPath(SmartMonster smartMonster) =>
+        patrolPath; //&& smartMonster.timeSinceArrivedAtWaypoint > waypointDwellTime;
 
     // states //////////////////////////////////////////////////////////////////
     string UpdateServer_IDLE(SmartMonster smartMonster)
@@ -127,6 +138,21 @@ public class SmartMonsterBrain : CommonBrain
             // note: circle y is 0 because we add it to start.y
             Vector2 circle2D = Random.insideUnitCircle * moveDistance;
             smartMonster.movement.Navigate(smartMonster.startPosition + new Vector3(circle2D.x, 0, circle2D.y), 0);
+            return "MOVING";
+        }
+        if (EventPatrolPath(smartMonster))
+        {
+            Vector3 currentWaypoint = smartMonster.patrolPath.GetWaypoint(smartMonster.currentWaypointIndex);
+            float distanceToWaypoint = Vector3.Distance(smartMonster.transform.position, currentWaypoint);
+            bool atWaypoint = distanceToWaypoint < waypointTolerance;
+            if (atWaypoint) {
+                //smartMonster.SetTimeSinceArrivedAtWaypoint(0);
+                smartMonster.CycleWaypoint();
+                Vector3 nextPosition = smartMonster.patrolPath.GetWaypoint(smartMonster.currentWaypointIndex);
+                smartMonster.movement.Navigate(nextPosition, 0);
+                return "MOVING";
+            }
+            smartMonster.movement.Navigate(currentWaypoint, 0);
             return "MOVING";
         }
         if (EventDeathTimeElapsed(smartMonster)) { } // don't care

@@ -34,6 +34,12 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NetworkNavMeshAgent))]
 public partial class SmartMonster : Monster
 {
+    [Header("Patrol Path")]
+    public PatrolPath patrolPath;
+
+    [HideInInspector] public float timeSinceLastSawPlayer = Mathf.Infinity;
+    [HideInInspector] public float timeSinceArrivedAtWaypoint = Mathf.Infinity;
+    [HideInInspector] public int currentWaypointIndex = 0;
     // attack //////////////////////////////////////////////////////////////////
     // CanAttack check
     // we use 'is' instead of 'GetType' so that it works for inherited types too
@@ -48,5 +54,15 @@ public partial class SmartMonster : Monster
                 entity is Pet ||
                 entity is Mount ||
                 entity is SmartNpc);
+    }
+
+    public void SetTimeSinceArrivedAtWaypoint(float time)
+    {
+        timeSinceArrivedAtWaypoint = time;
+    }
+
+    public void CycleWaypoint()
+    {
+        currentWaypointIndex = patrolPath.GetNextIndex(currentWaypointIndex);
     }
 }
