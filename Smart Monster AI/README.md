@@ -1,4 +1,4 @@
-## Target Taunt Skill
+## Smart Monster AI
 
 *Made by bobatea#9400 on Discord!*
 
