@@ -12,7 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d5a2252ed87c49d186cac48c48d49c7, type: 3}
   m_Name: Smart Npc Brain
   m_EditorClassIdentifier: 
+  nature: 0
   moveProbability: 1
   moveDistance: 10
   followDistance: 20
   attackToMoveRangeRatio: 0.8
+  shoutDistance: 5
+  patrolPath: 0
+  chaseDistance: 5
+  suspicionTime: 3
+  aggroCooldownTime: 5
+  waypointTolerance: 1
+  waypointDwellTime: 3
+  patrolSpeedFraction: 0.2

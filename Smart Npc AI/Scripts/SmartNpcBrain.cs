@@ -4,6 +4,9 @@ using Mirror;
 [CreateAssetMenu(menuName = "uMMORPG Brain/Brains/Smart Npc", order = 999)]
 public class SmartNpcBrain : CommonBrain
 {
+    [Header("AI Nature State (LAWFUL, NEUTRAL, EVIL)")]
+    public NatureState nature;
+
     [Header("Movement")]
     [Range(0, 1)] public float moveProbability = 0.1f; // chance per second
     public float moveDistance = 10;
@@ -13,6 +16,16 @@ public class SmartNpcBrain : CommonBrain
     // from far away.
     public float followDistance = 20;
     [Range(0.1f, 1)] public float attackToMoveRangeRatio = 0.8f; // move as close as 0.8 * attackRange to a target
+
+    [Header("Smart AI")]
+    public float shoutDistance = 5f;
+    public bool patrolPath;
+    public float chaseDistance = 5f;
+    public float suspicionTime = 3f;
+    public float aggroCooldownTime = 5f;
+    public float waypointTolerance = 1f;
+    public float waypointDwellTime = 3f;
+    [Range(0, 1)] public float patrolSpeedFraction = 0.2f;
 
     // events //////////////////////////////////////////////////////////////////
     public bool EventDeathTimeElapsed(SmartNpc smartNpc) =>

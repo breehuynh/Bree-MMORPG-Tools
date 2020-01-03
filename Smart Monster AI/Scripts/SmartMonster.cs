@@ -26,7 +26,7 @@
 // will always be generated randomly. Monsters can also randomly generate loot
 // gold between a minimum and a maximum amount.
 using UnityEngine;
-using Mirror;
+using UnityEngine.AI;
 
 [RequireComponent(typeof(Inventory))]
 [RequireComponent(typeof(MonsterSkills))]
@@ -39,7 +39,11 @@ public partial class SmartMonster : Monster
     // we use 'is' instead of 'GetType' so that it works for inherited types too
     public override bool CanAttack(Entity entity)
     {
-        return base.CanAttack(entity) &&
+        bool baseCanAttack = health.current > 0 &&
+                             entity.health.current > 0 &&
+                             entity != this &&
+                             !inSafeZone && !entity.inSafeZone;
+        return baseCanAttack &&
                (entity is Player ||
                 entity is Pet ||
                 entity is Mount ||

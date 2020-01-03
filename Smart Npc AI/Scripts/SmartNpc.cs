@@ -112,7 +112,11 @@ public class SmartNpc : Npc
     // we use 'is' instead of 'GetType' so that it works for inherited types too
     public override bool CanAttack(Entity entity)
     {
-        return entity is Monster;
+        bool baseCanAttack = health.current > 0 &&
+                             entity.health.current > 0 &&
+                             entity != this &&
+                             !inSafeZone && !entity.inSafeZone;
+        return baseCanAttack && entity is Monster;
         // return base.CanAttack(entity) &&
         //        (entity is Player ||
         //         entity is Pet ||
