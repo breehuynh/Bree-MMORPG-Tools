@@ -1,4 +1,4 @@
-## Target Taunt Skill
+## Smart NPC AI
 
 *Made by bobatea#9400 on Discord!*
 
@@ -9,4 +9,4 @@
 ### INSTRUCTIONS: 
 
 1. Drag and drop the files to your project
-2. Add the new SmartNpc prefab to your scene and Network Manager
+2. Add the new prefab to your scene and Network Manager
