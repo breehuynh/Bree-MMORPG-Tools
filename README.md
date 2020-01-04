@@ -14,7 +14,9 @@
   * Added Smart Monster AI
  
 * *future*
-  * Work on Speech Bubbles
+  * Work on Housing System
+  * Work on Character Creation
+  * Convert Fhiz to CE
   
 ------
   
