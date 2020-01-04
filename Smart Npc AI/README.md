@@ -1,4 +1,4 @@
-## Target Taunt Skill
+## Smart Npc AI
 
 *Made by bobatea#9400 on Discord!*
 
@@ -19,7 +19,6 @@
 
 1. Drag and drop the files to your project
 2. Add the new SmartNpc prefab to your scene and Network Manager
-3. Add the Patrol Path prefab to your scene and modify it to your liking
+3. Add the Patrol Path prefab to your scene and modify it to your liking. You can add or remove waypoints, or create different patrol paths. Assign this Patrol Path to your SmartNpc in the inspector under the SmartNpc component.
 4. Adjust the Smart NPC Brain in the Resource folder to your liking
-5. Select your SmartNpc prefab and make sure it has its Patrol Path (optional)
-6. Select one of the nine alignment states you would like
+5. Assign one of the nine Alignment States to your SmartNpc in the inspector under the SmartNpc component.
