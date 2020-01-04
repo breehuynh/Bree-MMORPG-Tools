@@ -5,7 +5,6 @@
 ### DESCRIPTION:
 
 - Can have a configurable Patrol path
-- Can have a configurable npc race/faction
 - Can self navigate 
 - Can guard area/town
 - Can fight off intruders
