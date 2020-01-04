@@ -10,10 +10,11 @@
 * CE V1.1
   * Added Target Taunt Skill
   * Added AoE Target skill
+  * Added Smart NPC AI
+  * Added Smart Monster AI
  
 * *future*
-  * Work on improved Monster Brain AI
-  * Work on improved NPC Brain AI
+  * Work on Speech Bubbles
   
 ------
   
