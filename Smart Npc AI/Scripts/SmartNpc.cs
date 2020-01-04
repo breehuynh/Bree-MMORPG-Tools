@@ -23,6 +23,16 @@ public class SmartNpc : Npc
     // save the start position for random movement distance and respawning
     [HideInInspector] public Vector3 startPosition;
 
+    [Header("Patrol Path")]
+    public PatrolPath patrolPath;
+
+    [Header("Alignment State")]
+    public AlignmentState alignmentState = AlignmentState.LAWFUL_GOOD;
+
+    [HideInInspector] public float timeSinceLastSawPlayer = Mathf.Infinity;
+    [HideInInspector] public float timeSinceArrivedAtWaypoint = Mathf.Infinity;
+    [HideInInspector] public int currentWaypointIndex = 0;
+
     // networkbehaviour ////////////////////////////////////////////////////////
     protected override void Start()
     {
@@ -107,20 +117,60 @@ public class SmartNpc : Npc
     }
 
 
-    // attack //////////////////////////////////////////////////////////////////
-    // CanAttack check
-    // we use 'is' instead of 'GetType' so that it works for inherited types too
     public override bool CanAttack(Entity entity)
     {
+        bool alignmentCondition = false;
+        switch (alignmentState)
+        {
+            case AlignmentState.LAWFUL_GOOD:
+                if (entity is Monster)
+                    alignmentCondition = true;
+                break;
+            case AlignmentState.LAWFUL_NEUTRAL:
+                if (entity is Monster ||
+                    entity is Pet ||
+                    entity is Mount)
+                    alignmentCondition = true;
+                break;
+            case AlignmentState.LAWFUL_EVIL:
+                if (entity is Monster ||
+                    entity is Npc)
+                    alignmentCondition = true;
+                break;
+            case AlignmentState.NEUTRAL_GOOD:
+                if (entity is Monster)
+                    alignmentCondition = true;
+                break;
+            case AlignmentState.TRUE_NEUTRAL:
+                alignmentCondition = false;
+                break;
+            case AlignmentState.NEUTRAL_EVIL:
+                if (entity is Pet)
+                    alignmentCondition = true;
+                break;
+            case AlignmentState.CHAOTIC_GOOD:
+                if (entity is Pet ||
+                    entity is Mount)
+                    alignmentCondition = true;
+                break;
+            case AlignmentState.CHAOTIC_NEUTRAL:
+                if (entity is Player ||
+                    entity is Pet ||
+                    entity is Mount)
+                    alignmentCondition = true;
+                break;
+            case AlignmentState.CHAOTIC_EVIL:
+                alignmentCondition = true;
+                break;
+
+
+
+        }
         bool baseCanAttack = health.current > 0 &&
                              entity.health.current > 0 &&
                              entity != this &&
                              !inSafeZone && !entity.inSafeZone;
-        return baseCanAttack && entity is Monster;
-        // return base.CanAttack(entity) &&
-        //        (entity is Player ||
-        //         entity is Pet ||
-        //         entity is Mount);
+        return baseCanAttack && alignmentCondition;
     }
 
     // interaction /////////////////////////////////////////////////////////////
@@ -155,5 +205,15 @@ public class SmartNpc : Npc
             Vector3 destination = Utils.ClosestPoint(this, player.transform.position);
             player.movement.Navigate(destination, player.interactionRange);
         }
+    }
+
+    public void SetTimeSinceArrivedAtWaypoint(float time)
+    {
+        timeSinceArrivedAtWaypoint = time;
+    }
+
+    public void CycleWaypoint()
+    {
+        currentWaypointIndex = patrolPath.GetNextIndex(currentWaypointIndex);
     }
 }

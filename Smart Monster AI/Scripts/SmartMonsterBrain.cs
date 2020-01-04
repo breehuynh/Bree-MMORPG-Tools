@@ -18,7 +18,6 @@ public class SmartMonsterBrain : CommonBrain
     public bool suspicion = true;
     public float suspicionTime = 3f;
     public bool patrolPath = true;
-    [Range(0, 1)] public float patrolSpeedFraction = 0.2f;
     public float waypointTolerance = 1f;
     public float waypointDwellTime = 3f;
 

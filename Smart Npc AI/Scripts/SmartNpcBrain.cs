@@ -4,9 +4,6 @@ using Mirror;
 [CreateAssetMenu(menuName = "uMMORPG Brain/Brains/Smart Npc", order = 999)]
 public class SmartNpcBrain : CommonBrain
 {
-    [Header("AI Nature State (LAWFUL, NEUTRAL, EVIL)")]
-    public NatureState nature;
-
     [Header("Movement")]
     [Range(0, 1)] public float moveProbability = 0.1f; // chance per second
     public float moveDistance = 10;
@@ -18,14 +15,11 @@ public class SmartNpcBrain : CommonBrain
     [Range(0.1f, 1)] public float attackToMoveRangeRatio = 0.8f; // move as close as 0.8 * attackRange to a target
 
     [Header("Smart AI")]
-    public float shoutDistance = 5f;
-    public bool patrolPath;
-    public float chaseDistance = 5f;
+    public bool suspicion = true;
     public float suspicionTime = 3f;
-    public float aggroCooldownTime = 5f;
+    public bool patrolPath = true;
     public float waypointTolerance = 1f;
     public float waypointDwellTime = 3f;
-    [Range(0, 1)] public float patrolSpeedFraction = 0.2f;
 
     // events //////////////////////////////////////////////////////////////////
     public bool EventDeathTimeElapsed(SmartNpc smartNpc) =>
@@ -40,6 +34,9 @@ public class SmartNpcBrain : CommonBrain
     public bool EventTargetTooFarToFollow(SmartNpc smartNpc) =>
         smartNpc.target != null &&
         Vector3.Distance(smartNpc.startPosition, Utils.ClosestPoint(smartNpc.target, smartNpc.transform.position)) > followDistance;
+
+    public bool EventPatrolPath(SmartNpc smartNpc) =>
+        patrolPath; //&& smartNpc.timeSinceArrivedAtWaypoint > waypointDwellTime;
 
     // states //////////////////////////////////////////////////////////////////
     string UpdateServer_IDLE(SmartNpc smartNpc)
@@ -140,6 +137,22 @@ public class SmartNpcBrain : CommonBrain
             // note: circle y is 0 because we add it to start.y
             Vector2 circle2D = Random.insideUnitCircle * moveDistance;
             smartNpc.movement.Navigate(smartNpc.startPosition + new Vector3(circle2D.x, 0, circle2D.y), 0);
+            return "MOVING";
+        }
+        if (EventPatrolPath(smartNpc))
+        {
+            Vector3 currentWaypoint = smartNpc.patrolPath.GetWaypoint(smartNpc.currentWaypointIndex);
+            float distanceToWaypoint = Vector3.Distance(smartNpc.transform.position, currentWaypoint);
+            bool atWaypoint = distanceToWaypoint < waypointTolerance;
+            if (atWaypoint)
+            {
+                //smartNpc.SetTimeSinceArrivedAtWaypoint(0);
+                smartNpc.CycleWaypoint();
+                Vector3 nextPosition = smartNpc.patrolPath.GetWaypoint(smartNpc.currentWaypointIndex);
+                smartNpc.movement.Navigate(nextPosition, 0);
+                return "MOVING";
+            }
+            smartNpc.movement.Navigate(currentWaypoint, 0);
             return "MOVING";
         }
         if (EventDeathTimeElapsed(smartNpc)) { } // don't care

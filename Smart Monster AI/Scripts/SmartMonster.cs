@@ -37,6 +37,9 @@ public partial class SmartMonster : Monster
     [Header("Patrol Path")]
     public PatrolPath patrolPath;
 
+    [Header("Alignment State")]
+    public AlignmentState alignmentState = AlignmentState.LAWFUL_GOOD;
+
     [HideInInspector] public float timeSinceLastSawPlayer = Mathf.Infinity;
     [HideInInspector] public float timeSinceArrivedAtWaypoint = Mathf.Infinity;
     [HideInInspector] public int currentWaypointIndex = 0;
@@ -45,15 +48,57 @@ public partial class SmartMonster : Monster
     // we use 'is' instead of 'GetType' so that it works for inherited types too
     public override bool CanAttack(Entity entity)
     {
+        bool alignmentCondition = false;
+        switch (alignmentState)
+        {
+            case AlignmentState.LAWFUL_GOOD:
+                if (entity is Player)
+                    alignmentCondition = true;
+                break;
+            case AlignmentState.LAWFUL_NEUTRAL:
+                if (entity is Pet ||
+                    entity is Mount)
+                    alignmentCondition = true;
+                break;
+            case AlignmentState.LAWFUL_EVIL:
+                if (entity is Player ||
+                    entity is Npc)
+                    alignmentCondition = true;
+                break;
+            case AlignmentState.NEUTRAL_GOOD:
+                if (entity is Pet)
+                    alignmentCondition = true;
+                break;
+            case AlignmentState.TRUE_NEUTRAL:
+                alignmentCondition = false;
+                break;
+            case AlignmentState.NEUTRAL_EVIL:
+                if  (entity is Mount)
+                    alignmentCondition = true;
+                break;
+            case AlignmentState.CHAOTIC_GOOD:
+                if  (entity is Pet ||
+                    entity is Mount)
+                    alignmentCondition = true;
+                break;
+            case AlignmentState.CHAOTIC_NEUTRAL:
+                if (entity is Player ||
+                    entity is Pet ||
+                    entity is Mount)
+                    alignmentCondition = true;
+                break;
+            case AlignmentState.CHAOTIC_EVIL:
+                alignmentCondition = true;
+                break;
+            
+
+            
+        }
         bool baseCanAttack = health.current > 0 &&
                              entity.health.current > 0 &&
                              entity != this &&
                              !inSafeZone && !entity.inSafeZone;
-        return baseCanAttack &&
-               (entity is Player ||
-                entity is Pet ||
-                entity is Mount ||
-                entity is SmartNpc);
+        return baseCanAttack && alignmentCondition;
     }
 
     public void SetTimeSinceArrivedAtWaypoint(float time)

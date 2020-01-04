@@ -16440,7 +16440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serverOnly: 0
   m_AssetId: 
-  m_SceneId: 2595309807
+  m_SceneId: 3285195154
 --- !u!195 &5366316636249181458
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -16693,10 +16693,11 @@ MonoBehaviour:
   deathTime: 30
   deathTimeEnd: 0
   respawn: 1
-  respawnTime: 10
+  respawnTime: 0
   respawnTimeEnd: 0
   startPosition: {x: 0, y: 0, z: 0}
   patrolPath: {fileID: 0}
+  alignmentState: 8
   timeSinceLastSawPlayer: Infinity
   timeSinceArrivedAtWaypoint: Infinity
   currentWaypointIndex: 0

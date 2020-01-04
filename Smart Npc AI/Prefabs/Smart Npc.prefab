@@ -3224,7 +3224,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4053576800782355637}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0.00000028088027}
   m_LocalPosition: {x: 3.371, y: 2.31, z: -26.264275}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3237,7 +3237,7 @@ Transform:
   - {fileID: 4053576801365500184}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -179.99998, z: 0}
 --- !u!95 &4053576800782355619
 Animator:
   serializedVersion: 3
@@ -3271,7 +3271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serverOnly: 0
   m_AssetId: 
-  m_SceneId: 2995458195
+  m_SceneId: 1460498439
 --- !u!195 &4053576800782355617
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3534,6 +3534,11 @@ MonoBehaviour:
   respawnTime: 10
   respawnTimeEnd: 0
   startPosition: {x: 0, y: 0, z: 0}
+  patrolPath: {fileID: 0}
+  alignmentState: 0
+  timeSinceLastSawPlayer: Infinity
+  timeSinceArrivedAtWaypoint: Infinity
+  currentWaypointIndex: 0
 --- !u!114 &4053576800782355627
 MonoBehaviour:
   m_ObjectHideFlags: 0
