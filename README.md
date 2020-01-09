@@ -1,4 +1,4 @@
-# Boba uMMORPG CE Tools v1.1
+# Boba uMMORPG CE Tools v2.1
 
 *Tools to help you develop your MMORPG.*
 
@@ -7,7 +7,7 @@
 ------
 
 ### Roadmap:
-* CE V1.1
+* CE V2.1
   * Added Target Taunt Skill
   * Added AoE Target skill
   * Added Smart NPC AI
