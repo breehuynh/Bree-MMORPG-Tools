@@ -1,4 +1,4 @@
-# Boba uMMORPG CE Tools v2.1
+# Boba MMORPG Tools
 
 *Tools to help you develop your MMORPG.*
 
@@ -6,17 +6,7 @@
 
 ------
 
-### Roadmap:
-* CE V2.1
-  * Added Target Taunt Skill
-  * Added AoE Target skill
-  * Added Smart NPC AI
-  * Added Smart Monster AI
- 
-* *future*
-  * Work on Housing System
-  * Work on Character Creation
-  * Convert Fhiz to CE
+# Boba uMMORPG CE Tools v2.1
   
 ------
   
