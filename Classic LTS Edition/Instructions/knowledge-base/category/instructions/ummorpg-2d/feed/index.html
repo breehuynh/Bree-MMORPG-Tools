@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>uMMORPG 2d &#8211; Indie MMO</title>
+	<atom:link href="https://indie-mmo.net/knowledge-base/category/instructions/ummorpg-2d/feed/" rel="self" type="application/rss+xml" />
+	<link>https://indie-mmo.net</link>
+	<description>Helping you build your dream unity game through addons, assets, and support!</description>
+	<lastBuildDate>Tue, 05 Nov 2019 13:32:22 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+	<item>
+		<title>Word Filter 2d</title>
+		<link>https://indie-mmo.net/knowledge-base/word-filter-2d/</link>
+				<comments>https://indie-mmo.net/knowledge-base/word-filter-2d/#respond</comments>
+				<pubDate>Mon, 28 Oct 2019 18:20:38 +0000</pubDate>
+		<dc:creator><![CDATA[Crow Obscured]]></dc:creator>
+		
+		<guid isPermaLink="false">https://indie-mmo.net/?post_type=epkb_post_type_1&#038;p=5586</guid>
+				<description><![CDATA[Version: 2019.100 Requirements: uMMORPG2d, Tools Script Define: _IMMOUSAGEREQUIREMENTS Core Changes: Yes Tutorial Video: No Description Filters both character names and chat messages for bad words and denies them if they contain those (blocks the name from being used or the message from being sent). You can maintain a list of &#8220;bad words&#8221; that is used [&#8230;]]]></description>
+								<content:encoded><![CDATA[
+<table class="wp-block-table is-style-stripes"><tbody><tr><td><strong>Version:</strong></td><td> 2019.100 </td><td><strong>Requirements:</strong></td><td>uMMORPG2d, Tools</td><td><strong>Script Define:</strong></td><td>_IMMOUSAGEREQUIREMENTS</td></tr><tr><td><strong>Core Changes:</strong></td><td>Yes</td><td><strong>Tutorial Video:</strong></td><td>No</td><td></td><td></td></tr></tbody></table>
+
+
+<h2>Description</h2>
+<p>Filters both character names and chat messages for bad words and denies them if they contain those (blocks the name from being used or the message from being sent). You can maintain a list of &#8220;bad words&#8221; that is used in both cases.</p>
+<hr>
+<h2>Core Changes</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Open the following script <strong>NetworkManagerMMO.cs</strong>. <span class="collapseomatic " id="id5e03ce96302e9"  tabindex="0" title="See Changes..."    >See Changes...</span><div id="target-id5e03ce96302e9" class="collapseomatic_content "><br>Comment Out/Delete this line:
+<pre><code>    public bool IsAllowedCharacterName(string characterName)
+    {
+        // not too long?
+        // only contains letters, number and underscore and not empty (+)?
+        // (important for database safety etc.)
+        return characterName.Length &lt;= characterNameMaxLength &amp;&amp;
+               Regex.IsMatch(characterName, @"^[a-zA-Z0-9_]+$");
+    }</code></pre>
+</div>
+</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Open the following script <strong>PlayerChat.cs</strong>. <span class="collapseomatic " id="id5e03ce9630338"  tabindex="0" title="See Changes..."    >See Changes...</span><div id="target-id5e03ce9630338" class="collapseomatic_content "><br>Locate this line:
+<pre><code>if (!string.IsNullOrWhiteSpace(text))</code></pre>
+<p>Modify to match:</p>
+<pre><span style="color: #0000ff;"><code><span style="color: #0000ff;">if (UCE_IsAllowedChatText(text))</span></code></span></pre>
+</div>
+</li>
+</ol>
+<hr>
+<h2>Installation</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Create a new &#8220;Wordfilter&#8221; list via the context menu.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Add all words to the list you want to ban from both chat and character <span style="color: #000000;">names.</span></li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Select NetworkManager in your scene and add the Wordfilter object to the new slot in the inspector.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong></span> Select the Chat component on each one of your player prefabs and add the Wordfilter object to the new slot in the inspector.</li>
+</ol>
+<hr>
+<h2>Screenshot</h2>
+<p><img class="alignnone wp-image-3793 size-full" src="https://indie-mmo.net/wp-content/uploads/2019/10/word-filter-2.jpg" alt="" width="1312" height="364"></p>
+<hr>
+<h2>Extra</h2>
+<ul>
+<li>When a bad word is contained the character will not be created, the player gets a popup with &#8220;error&#8221;, thats all.</li>
+<li>When a chat message contains a bad word, the message is not being sent. That also reduces network bandwith.</li>
+</ul>
+
+
+<p></p>
+]]></content:encoded>
+							<wfw:commentRss>https://indie-mmo.net/knowledge-base/word-filter-2d/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Weight System 2d</title>
+		<link>https://indie-mmo.net/knowledge-base/weight-system-2d/</link>
+				<comments>https://indie-mmo.net/knowledge-base/weight-system-2d/#respond</comments>
+				<pubDate>Mon, 28 Oct 2019 18:17:09 +0000</pubDate>
+		<dc:creator><![CDATA[Crow Obscured]]></dc:creator>
+		
+		<guid isPermaLink="false">https://indie-mmo.net/?post_type=epkb_post_type_1&#038;p=5577</guid>
+				<description><![CDATA[Version: 2019.100 Requirements: uMMORPG2d, Tools, Attributes Script Define: None Core Changes: No Tutorial Video: No Description This weight system adds a weight to every item in the game. Players are able to carry a maximum weight according to one Attribute. You can then specify a &#8220;burdened&#8221; buff that kicks in, when the players inventory total [&#8230;]]]></description>
+								<content:encoded><![CDATA[
+<table class="wp-block-table is-style-stripes"><tbody><tr><td><strong>Version:</strong></td><td> 2019.100 </td><td><strong>Requirements:</strong></td><td>uMMORPG2d, Tools, Attributes</td><td><strong>Script Define:</strong></td><td>None</td></tr><tr><td><strong>Core Changes:</strong></td><td>No</td><td><strong>Tutorial Video:</strong></td><td>No</td><td></td><td></td></tr></tbody></table>
+
+
+<h2>Description</h2>
+<p>This weight system adds a weight to every item in the game. Players are able to carry a maximum weight according to one Attribute. You can then specify a &#8220;burdened&#8221; buff that kicks in, when the players inventory total weight reaches a certain threshold. The burdened buff can feature several levels to simulate levels of burden and is refreshed or removed automatically every second.</p>
+<hr>
+<h2>Installation</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Check the &#8220;Burdened&#8221; buff in this AddOns Resources &gt; Skills folder or create a new one via the context menu.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Move the &#8220;Burdened&#8221; buff from this AddOns Resources &gt; Skills folder into your projects main&nbsp;<b>Resources &gt; Skills</b>&nbsp;folder.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Do&nbsp;<b>not</b>&nbsp;keep a duplicate skill of the same name and use only one&nbsp;<b>Resources</b>&nbsp;folder in your project.</li>
+<li><span style="color: #000080;"><strong>[Optional]</strong></span> The &#8220;Burdened&#8221; buff can be edited and have levels. Set your penalties there.</li>
+<li><span style="color: #000080;"><strong>[Optional]</strong> </span>Check your player prefabs for the new weight system settings and edit them to your liking.</li>
+</ol>
+<hr>
+<h2>Screenshot</h2>
+<p><img class="alignnone wp-image-3789 size-full" src="https://indie-mmo.net/wp-content/uploads/2019/10/weight-system-2.jpg" alt="" width="1278" height="234"></p>
+<hr>
+<h2>Extra</h2>
+<ul>
+<li>Please note this system does not limit the amount of items that can be carried. It just penalizes carrying too many items.</li>
+<li>Should the Burdened buff be removed from the player (via Healing/Debuff) it will be re-applied about a second later again automatically.</li>
+<li>The amount of levels your skill will require, depends on the range of total weight / current weight in your game. You can even have just 1 level, but there can be a much finer granularity if you wish. The formula is quite simple: Current Weight&nbsp;<b>divided by</b>&nbsp;Max Weight.</li>
+<li>There is a &#8220;max level&#8221; for the burdened skill that you can set, to prevent it from shooting through the roof.</li>
+<li>You can set a Attribute that will increase the players carrying capability. This only works with my Attributes AddOn, not the default attributes!</li>
+</ul>
+<ol>
+<li style="list-style-type: none;">&nbsp;</li>
+</ol>
+
+
+<p></p>
+]]></content:encoded>
+							<wfw:commentRss>https://indie-mmo.net/knowledge-base/weight-system-2d/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Walking Npc 2d</title>
+		<link>https://indie-mmo.net/knowledge-base/walking-npc-2d/</link>
+				<comments>https://indie-mmo.net/knowledge-base/walking-npc-2d/#respond</comments>
+				<pubDate>Mon, 28 Oct 2019 18:12:43 +0000</pubDate>
+		<dc:creator><![CDATA[Crow Obscured]]></dc:creator>
+		
+		<guid isPermaLink="false">https://indie-mmo.net/?post_type=epkb_post_type_1&#038;p=5567</guid>
+				<description><![CDATA[Version: 2019.100 Requirements: uMMORPG2d, Tools Script Define: Core Changes: Yes Tutorial Video: No Description Allows NPCs to walk around randomly like Monsters or to patrol any number of waypoints. Npc&#8217;s also suspend their next movement while a player is near them. Core Changes [Required] Open the following script Npc.cs. Installation [Required] Add new animation parameter(s) [&#8230;]]]></description>
+								<content:encoded><![CDATA[
+<table class="wp-block-table is-style-stripes"><tbody><tr><td><strong>Version:</strong></td><td> 2019.100 </td><td><strong>Requirements:</strong></td><td>uMMORPG2d, Tools</td><td><strong>Script Define:</strong></td><td></td></tr><tr><td><strong>Core Changes:</strong></td><td>Yes</td><td><strong>Tutorial Video:</strong></td><td>No</td><td></td><td></td></tr></tbody></table>
+
+
+<h2>Description</h2>
+<p>Allows NPCs to walk around randomly like Monsters or to patrol any number of waypoints. Npc&#8217;s also suspend their next movement while a player is near them.</p>
+<hr>
+<h2>Core Changes</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Open the following script <strong>Npc.cs</strong>. <span class="collapseomatic " id="id5e03ce963233d"  tabindex="0" title="See Changes..."    >See Changes...</span><div id="target-id5e03ce963233d" class="collapseomatic_content "><br>Comment Out/Delete this line:
+<pre><code>[Server] protected override string UpdateServer() { return state; }</code></pre>
+</div>
+</li>
+</ol>
+<hr>
+<h2>Installation</h2>
+<ol>
+<li><strong><span style="color: #800000;">[Required]</span> </strong>Add new animation parameter(s) to your NPCs controller: MOVING.</li>
+</ol>
+<hr>
+<h2>Screenshot</h2>
+<p><img class="alignnone wp-image-3786 size-full" src="https://indie-mmo.net/wp-content/uploads/2019/10/walking-npc-1-1.jpg" alt="" width="1280" height="232"></p>
+<hr>
+<h2>Extra</h2>
+<ul>
+<li>
+<p>Waypoints are simple transforms and could be any gameobject (like grass on the ground) you can also create &#8220;empty&#8221; game objects and use those as waypoints.</p>
+</li>
+<li>
+<p>You can mix both Random Movement and Waypoint Movement and set a ratio for the Npc to switch between both types. This way you can have Npcs that move a little bit at random, then continue to the next waypoint and so on.</p>
+</li>
+</ul>
+
+
+<p></p>
+]]></content:encoded>
+							<wfw:commentRss>https://indie-mmo.net/knowledge-base/walking-npc-2d/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Usage Requirements 2d</title>
+		<link>https://indie-mmo.net/knowledge-base/usage-requirements-2d/</link>
+				<comments>https://indie-mmo.net/knowledge-base/usage-requirements-2d/#respond</comments>
+				<pubDate>Mon, 28 Oct 2019 16:14:47 +0000</pubDate>
+		<dc:creator><![CDATA[Crow Obscured]]></dc:creator>
+		
+		<guid isPermaLink="false">https://indie-mmo.net/?post_type=epkb_post_type_1&#038;p=5558</guid>
+				<description><![CDATA[Version: 2019.100 Requirements: uMMORPG2d, Tools Script Define: _IMMOUSAGEREQUIREMENTS Core Changes: Yes Tutorial Video: No Description Adds limits on using/equipping/casting items/skills. Very helpful to limit item usage to certain classes or under special conditions. It also allows to limit usage of items/skills to special areas in your game. Core Changes [Required] Open the following script UsableItem.cs. [&#8230;]]]></description>
+								<content:encoded><![CDATA[
+<table class="wp-block-table is-style-stripes"><tbody><tr><td><strong>Version:</strong></td><td> 2019.100 </td><td><strong>Requirements:</strong></td><td>uMMORPG2d, Tools</td><td><strong>Script Define:</strong></td><td>_IMMOUSAGEREQUIREMENTS</td></tr><tr><td><strong>Core Changes:</strong></td><td>Yes</td><td><strong>Tutorial Video:</strong></td><td>No</td><td></td><td></td></tr></tbody></table>
+
+
+<h2>Description</h2>
+<p>Adds limits on using/equipping/casting items/skills. Very helpful to limit item usage to certain classes or under special conditions. It also allows to limit usage of items/skills to special areas in your game.</p>
+<hr>
+<h2>Core Changes</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Open the following script <strong>UsableItem.cs</strong>. <span class="collapseomatic " id="id5e03ce963346e"  tabindex="0" title="See Changes..."    >See Changes...</span><div id="target-id5e03ce963346e" class="collapseomatic_content "><br>Locate this line:
+<pre><code>// check level etc. and make sure that cooldown buff elapsed (if any)
+        return player.level &gt;= minLevel &amp;&amp;
+               (cooldownBuff == null ||
+                player.GetBuffIndexByName(cooldownBuff.name) == -1);</code></pre>
+<p>Modify to match:</p>
+<pre><code>// check level etc. and make sure that cooldown buff elapsed (if any)
+        return<span style="color: #0000ff;"> UCE_CanUse(player) &amp;&amp;</span>
+        		player.level &gt;= minLevel &amp;&amp;
+               (cooldownBuff == null ||
+                player.GetBuffIndexByName(cooldownBuff.name) == -1);</code></pre>
+</div>
+</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Open the following script <strong>ScriptableSkill.cs</strong>. <span class="collapseomatic " id="id5e03ce963349c"  tabindex="0" title="See Changes..."    >See Changes...</span><div id="target-id5e03ce963349c" class="collapseomatic_content "><br>Locate this line:
+<pre><code>    public virtual bool CheckSelf(Entity caster, int skillLevel)
+    {
+        // has a weapon (important for projectiles etc.), no cooldown, hp, mp?
+        return caster.health &gt; 0 &amp;&amp;
+               caster.mana &gt;= manaCosts.Get(skillLevel) &amp;&amp;
+               caster.GetEquippedWeaponCategory().StartsWith(requiredWeaponCategory);
+    }</code></pre>
+<p>Modify to match:</p>
+<pre><code>    public virtual bool CheckSelf(Entity caster, int skillLevel)
+    {
+        // has a weapon (important for projectiles etc.), no cooldown, hp, mp?
+        return <span style="color: #0000ff;">UCE_CanCast(caster, skillLevel) &amp;&amp;</span>
+        		caster.health &gt; 0 &amp;&amp;
+               caster.mana &gt;= manaCosts.Get(skillLevel) &amp;&amp;
+               caster.GetEquippedWeaponCategory().StartsWith(requiredWeaponCategory);
+    }</code></pre>
+</div>
+</li>
+</ol>
+<hr>
+<h2>Installation</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required]</strong></span> Check the new section in your item and skill prefabs.</li>
+<li><strong><span style="color: #000080;">[Optional]</span> </strong>Most options are self explanatory, lets look at the &#8220;usage area&#8221; and &#8220;equipment id&#8221; options:</li>
+<li><span style="color: #000080;"><strong>[Optional]</strong></span> Add the &#8220;Usage Area&#8221; from this AddOns prefabs folder to your scene and set the ID in the inspector.</li>
+<li><span style="color: #000080;"><strong>[Optional]</strong></span> Create any item/skill with a matching ID to make this item/skill only activateable inside the area (all other restrictions also count).</li>
+<li><span style="color: #000080;"><strong>[Optional]</strong></span> Assign a &#8220;Usage Equipment ID&#8221; greater than 0 to any skill, to limit that skill activation.</li>
+<li><span style="color: #000080;"><strong>[Optional]</strong></span> Assign a &#8220;Usage Equipment ID&#8221; to any equipment item to require the player to have that item equipped in order to activate a skill with the same &#8220;Usage Equipment ID&#8221;.</li>
+<li><span style="color: #000080;"><strong>[Optional]</strong></span> This way you can create &#8220;Axe Attack&#8221; that can only be activated when a &#8220;Axe&#8221; is equipped, just make sure that all Axes and Axe Skills share the same ID.</li>
+</ol>
+<hr>
+<h2>Screenshot</h2>
+<p><img class="alignnone wp-image-3783 size-full" src="https://indie-mmo.net/wp-content/uploads/2019/10/usage-requirements-2.jpg" alt="" width="1282" height="1374"></p>
+<hr>
+<h2>Extra</h2>
+<ul>
+<li>
+<p>When using a Area and ID, the ID has to be greater than 0 &#8211; or it is ignored.</p>
+</li>
+<li>
+<p>When combined with &#8220;PVP Zones AddOn&#8221; you can limit the usage of the equipped weapon to a area as well.</p>
+</li>
+</ul>
+
+
+<p></p>
+]]></content:encoded>
+							<wfw:commentRss>https://indie-mmo.net/knowledge-base/usage-requirements-2d/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Unlockable Classes 2d</title>
+		<link>https://indie-mmo.net/knowledge-base/unlockable-classes-2d/</link>
+				<comments>https://indie-mmo.net/knowledge-base/unlockable-classes-2d/#respond</comments>
+				<pubDate>Mon, 28 Oct 2019 16:08:57 +0000</pubDate>
+		<dc:creator><![CDATA[Crow Obscured]]></dc:creator>
+		
+		<guid isPermaLink="false">https://indie-mmo.net/?post_type=epkb_post_type_1&#038;p=5548</guid>
+				<description><![CDATA[Version: 2019.100 Requirements: uMMORPG2d, Tools, Character Creation Script Define: _IMMOUNLOCKABLECLASSES Core Changes: Yes Tutorial Video: No Description Limits the available classes at character creation. Adds items to the game that unlock additional classes. When the item is used, the new class is unlocked for the whole account. Core Changes [Required] Open the following script NetworkManagerMMO.cs. [&#8230;]]]></description>
+								<content:encoded><![CDATA[
+<table class="wp-block-table is-style-stripes"><tbody><tr><td><strong>Version:</strong></td><td> 2019.100 </td><td><strong>Requirements:</strong></td><td>uMMORPG2d, Tools, Character Creation</td><td><strong>Script Define:</strong></td><td> _IMMOUNLOCKABLECLASSES</td></tr><tr><td><strong>Core Changes:</strong></td><td>Yes</td><td><strong>Tutorial Video:</strong></td><td>No</td><td></td><td></td></tr></tbody></table>
+
+
+<h2>Description</h2>
+<p>Limits the available classes at character creation. Adds items to the game that unlock additional classes. When the item is used, the new class is unlocked for the whole account.</p>
+<hr>
+<h2>Core Changes</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Open the following script <strong>NetworkManagerMMO.cs</strong>. <span class="collapseomatic " id="id5e03ce9634485"  tabindex="0" title="See Changes..."    >See Changes...</span><div id="target-id5e03ce9634485" class="collapseomatic_content "><br>Locate this line:
+<pre><code>Utils.InvokeMany(typeof(NetworkManagerMMO), this, "OnServerLogin_", message);</code></pre>
+<p>Modify to match:</p>
+<pre><code>Utils.InvokeMany(typeof(NetworkManagerMMO), this, "OnServerLogin_", <span style="color: #0000ff;">conn,</span> message);</code></pre>
+</div>
+</li>
+</ol>
+<hr>
+<h2>Installation</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Make sure &#8220;Character Creation&#8221; AddOn is installed, up to date and fully functional. As &#8220;Unlockable Classes&#8221; AddOn depends on &#8220;Character Creation&#8221; AddOn.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong></span> Check the scriptable object that is already contained in this AddOn and add all default classes you want to be available at the beginning of a new account.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Locate the &#8220;NetworkManager&#8221; in your scene and assign that scriptable object to the new slot labelled with the &#8220;Unlockable Classes&#8221; header.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Now create a new item &#8220;Unlockable Class&#8221; and assign a class prefab to it. Whenever a player uses such an item, the new class will be available on his/her account.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>When using &#8220;Auto Register Spawnables&#8221; AddOn, make sure your spawnable prefabs list is empty and all prefabs are in your Resources-&gt;Entity folder</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>When&nbsp;<b>not</b>&nbsp;&#8220;Auto Register Spawnables&#8221; AddOn, make sure all of your player classes are added to the spawnable list of your Network Manager.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Make sure that the amount of class buttons in the &#8220;Character Creation UI&#8221; matches the&nbsp;<b>total</b>&nbsp;number of classes in your game. So when there are 8 classes and only 4 default classes, you still add a total of 8 buttons. Make sure all buttons are correctly linked to the inspector of the &#8220;Character Creation UI&#8221;.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>When using&nbsp;<b>UMA</b>&nbsp;note that it might overwrite the changes this AddOn does to the Network Manager and Network Messages (please help yourself in that case).</li>
+</ol>
+<hr>
+<h2>Extras</h2>
+<ul>
+<li><span style="color: #000000;">Make sure to delete the default &#8220;AddOnExample.cs&#8221; in the uMMORPG3d AddOn folder &#8211; it will cause issues (you won&#8217;t need it &#8211; ever)!</span></li>
+<li><span style="color: #000000;">Also make sure to re-assign your player prefabs to the default unlockable classes template, also do so everytime you update this AddOn</span></li>
+</ul>
+
+
+<p></p>
+]]></content:encoded>
+							<wfw:commentRss>https://indie-mmo.net/knowledge-base/unlockable-classes-2d/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Timed Skill Finish 2d</title>
+		<link>https://indie-mmo.net/knowledge-base/timed-skill-finish-2d/</link>
+				<comments>https://indie-mmo.net/knowledge-base/timed-skill-finish-2d/#respond</comments>
+				<pubDate>Mon, 28 Oct 2019 15:23:27 +0000</pubDate>
+		<dc:creator><![CDATA[Crow Obscured]]></dc:creator>
+		
+		<guid isPermaLink="false">https://indie-mmo.net/?post_type=epkb_post_type_1&#038;p=5532</guid>
+				<description><![CDATA[Version: 2019.100 Requirements: uMMORPG2d, Tools Script Define: None Core Changes: Yes Tutorial Video: No Description Dynamically adjust when a skill is applied: Allows you to have skills activated before the Cast Bar runs out of time. This is very useful to align animations with skills. Sometimes the skill is triggered too late while waiting for [&#8230;]]]></description>
+								<content:encoded><![CDATA[
+<table class="wp-block-table is-style-stripes"><tbody><tr><td><strong>Version:</strong></td><td> 2019.100 </td><td><strong>Requirements:</strong></td><td>uMMORPG2d, Tools</td><td><strong>Script Define:</strong></td><td>None</td></tr><tr><td><strong>Core Changes:</strong></td><td>Yes</td><td><strong>Tutorial Video:</strong></td><td>No</td><td></td><td></td></tr></tbody></table>
+
+
+<h2>Description</h2>
+<p>Dynamically adjust when a skill is applied: Allows you to have skills activated before the Cast Bar runs out of time. This is very useful to align animations with skills. Sometimes the skill is triggered too late while waiting for the cast animation to finish playing &#8211; this AddOn solves that problem!</p>
+<hr>
+<h2>Core Changes</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Open the following script <strong>Monster.cs</strong>. <span class="collapseomatic " id="id5e03ce96353f7"  tabindex="0" title="See Changes..."    >See Changes...</span><div id="target-id5e03ce96353f7" class="collapseomatic_content "><br>Locate this line:
+<pre><code>if (EventSkillFinished())
+{
+	... lots of code here ...
+}</code></pre>
+<p>Modify to match:</p>
+<pre><code>#if _iMMOTIMEDSKILLFINISH
+		if (UCE_StateSkillFinished())
+			return "IDLE";
+#else
+        if (EventSkillFinished())
+        {
+            // finished casting. apply the skill on the target.
+            FinishCastSkill(skills[currentSkill]);
+
+            // did the target die? then clear it so that the monster doesn't
+            // run towards it if the target respawned
+            if (target.health == 0) target = null;
+
+            // go back to IDLE
+            lastSkill = currentSkill;
+            currentSkill = -1;
+            return "IDLE";
+        }
+#endif</code></pre>
+</div>
+</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Open the following script <strong>Player.cs</strong>. <span class="collapseomatic " id="id5e03ce963543d"  tabindex="0" title="See Changes..."    >See Changes...</span><div id="target-id5e03ce963543d" class="collapseomatic_content "><br>Locate this line:
+<pre><code>if (EventSkillFinished())
+{
+	... lots of code here ...
+}</code></pre>
+<p>Modify to match:</p>
+<pre><code>#if _iMMOTIMEDSKILLFINISH
+		if (UCE_StateSkillFinished())
+		return "IDLE";
+#else
+        if (EventSkillFinished())
+        {
+            // apply the skill after casting is finished
+            // note: we don't check the distance again. it's more fun if players
+            //       still cast the skill if the target ran a few steps away
+            Skill skill = skills[currentSkill];
+
+            // apply the skill on the target
+            FinishCastSkill(skill);
+
+            // clear current skill for now
+            currentSkill = -1;
+
+            // target-based skill and no more valid target? then clear
+            // (otherwise IDLE will get an unnecessary skill request and mess
+            //  with targeting)
+            bool validTarget = target != null &amp;&amp; target.health &gt; 0;
+            if (currentSkill != -1 &amp;&amp; skills[currentSkill].cancelCastIfTargetDied &amp;&amp; !validTarget)
+                currentSkill = -1;
+
+            // use next target if the user tried to target another while casting
+            UseNextTargetIfAny();
+
+            // go back to IDLE
+            return "IDLE";
+        }
+#endif</code></pre>
+</div>
+</li>
+</ol>
+<hr>
+<h2>Installation</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Apply all core changes.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Check out your skill templates and adjust the &#8220;ApplySkillEarlier&#8221; section.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong></span> &#8220;ApplySkillEarlier&#8221; is measured in seconds and marks the time when the skill will be applied (not the time when the skill casting is finished, this means the castbar continues to tick down).</li>
+</ol>
+<hr>
+<h2>Extra</h2>
+<ul>
+<li>
+<p>Can be used for both Monsters and Players, you can also do just one of the two core changes if you dont need the other.</p>
+</li>
+</ul>
+
+
+<p></p>
+]]></content:encoded>
+							<wfw:commentRss>https://indie-mmo.net/knowledge-base/timed-skill-finish-2d/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Teleporter 2d</title>
+		<link>https://indie-mmo.net/knowledge-base/teleporter-2d/</link>
+				<comments>https://indie-mmo.net/knowledge-base/teleporter-2d/#respond</comments>
+				<pubDate>Mon, 28 Oct 2019 15:17:43 +0000</pubDate>
+		<dc:creator><![CDATA[Crow Obscured]]></dc:creator>
+		
+		<guid isPermaLink="false">https://indie-mmo.net/?post_type=epkb_post_type_1&#038;p=5523</guid>
+				<description><![CDATA[Version: 2019.100 Requirements: uMMORPG2d, Tools Script Define: None Core Changes: No Tutorial Video: No Description A greatly enhanced version of the built in teleporter with a whole lot of customization options. It uses a Collider to represent the teleporter, so you can place it everywhere in your scene. The teleporter is triggered when entered by [&#8230;]]]></description>
+								<content:encoded><![CDATA[
+<table class="wp-block-table is-style-stripes"><tbody><tr><td><strong>Version:</strong></td><td> 2019.100 </td><td><strong>Requirements:</strong></td><td>uMMORPG2d, Tools</td><td><strong>Script Define:</strong></td><td>None</td></tr><tr><td><strong>Core Changes:</strong></td><td>No</td><td><strong>Tutorial Video:</strong></td><td>No</td><td></td><td></td></tr></tbody></table>
+
+
+<h2>Description</h2>
+<p>A greatly enhanced version of the built in teleporter with a whole lot of customization options. It uses a Collider to represent the teleporter, so you can place it everywhere in your scene. The teleporter is triggered when entered by a player and requires the player to confirm the teleport via a button click on a UI window.</p>
+<hr>
+<h2>Installation</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required]</strong></span> Add a new teleporter from this AddOns &#8220;Prefabs [Drag to Scene]&#8221; folder to your scene.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Edit all settings and don&#8217;t forgot to assign a teleportation target.</li>
+</ol>
+<hr>
+<h2>Extra</h2>
+<ul>
+<li>The &#8220;Simple&#8221; teleporter has no options, while the &#8220;Interactable&#8221; teleporter provides options that can limit it&#8217;s interaction (requires class, item etc.).</li>
+<li>In addition to the &#8220;Simple&#8221; and &#8220;Interactable&#8221; teleporters, you can also create a &#8220;Limited&#8221; Teleporter:</li>
+<li>If you want to create a teleport zone with a limited player count, you have to use the objects in the &#8220;Limited Teleport&#8221; subfolder instead.</li>
+<li>For a limited zone, you will need exactly one limited zone object and at least one teleporter that acts as entrance.</li>
+<li>You have to link all teleporter entrances to your limited zone to make it work. Its also a good idea to corner off the zone, so it cannot be entered by normal means.</li>
+<li>If you set it up correctly, you will then have a zone that only a limited number of players can enter at once &#8211; and only through the provided teleporters.</li>
+</ul>
+
+
+<p></p>
+]]></content:encoded>
+							<wfw:commentRss>https://indie-mmo.net/knowledge-base/teleporter-2d/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Skill &#8211; Target Uncurse 2d</title>
+		<link>https://indie-mmo.net/knowledge-base/skill-target-uncurse-2d/</link>
+				<comments>https://indie-mmo.net/knowledge-base/skill-target-uncurse-2d/#respond</comments>
+				<pubDate>Mon, 28 Oct 2019 15:06:07 +0000</pubDate>
+		<dc:creator><![CDATA[Crow Obscured]]></dc:creator>
+		
+		<guid isPermaLink="false">https://indie-mmo.net/?post_type=epkb_post_type_1&#038;p=5510</guid>
+				<description><![CDATA[Version: 2019.100 Requirements: uMMORPG2d, Tools, Cursed Equipment Script Define: None Core Changes: No Tutorial Video: No Description Removes all cursed items that can fit into the inventory of the target. Installation [Required] Create a Skill via the context menu and edit it&#8217;s settings. [Required] Add a new Animator State and Parameter for your skill.]]></description>
+								<content:encoded><![CDATA[
+<table class="wp-block-table is-style-stripes"><tbody><tr><td><strong>Version:</strong></td><td> 2019.100 </td><td><strong>Requirements:</strong></td><td>uMMORPG2d, Tools, Cursed Equipment</td><td><strong>Script Define:</strong></td><td>None</td></tr><tr><td><strong>Core Changes:</strong></td><td>No</td><td><strong>Tutorial Video:</strong></td><td>No</td><td></td><td></td></tr></tbody></table>
+
+
+<h2>Description</h2>
+<p>Removes all cursed items that can fit into the inventory of the target.</p>
+<hr>
+<h2>Installation</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required] </strong></span>Create a <b>Skill </b>via the context menu and edit it&#8217;s settings.</li>
+<li><span style="color: #800000;"><strong>[Required] </strong></span>Add a new <strong>Animator State</strong> and <strong>Parameter</strong> for your skill.</li>
+</ol>
+
+
+<p></p>
+]]></content:encoded>
+							<wfw:commentRss>https://indie-mmo.net/knowledge-base/skill-target-uncurse-2d/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Skill &#8211; Taunt Monster 2d</title>
+		<link>https://indie-mmo.net/knowledge-base/skill-taunt-monster-2d/</link>
+				<comments>https://indie-mmo.net/knowledge-base/skill-taunt-monster-2d/#respond</comments>
+				<pubDate>Mon, 28 Oct 2019 15:01:51 +0000</pubDate>
+		<dc:creator><![CDATA[Crow Obscured]]></dc:creator>
+		
+		<guid isPermaLink="false">https://indie-mmo.net/?post_type=epkb_post_type_1&#038;p=5501</guid>
+				<description><![CDATA[Version: 2019.100 Requirements: uMMORPG2d, Tools Script Define: None Core Changes: No Tutorial Video: No Description A new Skill type that will taunt the current target, if it is a Monster. Comes with the usual skill options like animation, mana cost and range &#8211; but also has a success chance per level. Simple and effectively create [&#8230;]]]></description>
+								<content:encoded><![CDATA[
+<table class="wp-block-table is-style-stripes"><tbody><tr><td><strong>Version:</strong></td><td> 2019.100 </td><td><strong>Requirements:</strong></td><td>uMMORPG2d, Tools</td><td><strong>Script Define:</strong></td><td>None</td></tr><tr><td><strong>Core Changes:</strong></td><td>No</td><td><strong>Tutorial Video:</strong></td><td>No</td><td></td><td></td></tr></tbody></table>
+
+
+<h2>Description</h2>
+<p>A new Skill type that will taunt the current target, if it is a Monster. Comes with the usual skill options like animation, mana cost and range &#8211; but also has a success chance per level. Simple and effectively create a Berserks War Cry skill etc.</p>
+<hr>
+<h2>Installation</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required] </strong></span>Create a <b>Skill </b>via the context menu and edit it&#8217;s settings.</li>
+<li><span style="color: #800000;"><strong>[Required] </strong></span>Add a new <strong>Animator State</strong> and <strong>Parameter</strong> for your skill.</li>
+</ol>
+<hr>
+<h2>Extra</h2>
+<ul>
+<li>If taunt does not work, check the aggro area, maximum follow range and maximum skill range of the taunted monster (because it&#8217;s limited to that).</li>
+</ul>
+
+
+<p></p>
+]]></content:encoded>
+							<wfw:commentRss>https://indie-mmo.net/knowledge-base/skill-taunt-monster-2d/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Skill &#8211; Target Cleanse 2d</title>
+		<link>https://indie-mmo.net/knowledge-base/skill-target-cleanse-2d/</link>
+				<comments>https://indie-mmo.net/knowledge-base/skill-target-cleanse-2d/#respond</comments>
+				<pubDate>Mon, 28 Oct 2019 14:56:25 +0000</pubDate>
+		<dc:creator><![CDATA[Crow Obscured]]></dc:creator>
+		
+		<guid isPermaLink="false">https://indie-mmo.net/?post_type=epkb_post_type_1&#038;p=5491</guid>
+				<description><![CDATA[Version: 2019.100 Requirements: uMMORPG2d, Tools Script Define: None Core Changes: No Tutorial Video: No Description Removes all negative Buffs from the target. A negative Buff is any Buff that is set to &#8220;disadvantagous&#8221; (this can be done by using my Tools and you set it directly on the buff template). Installation [Required] Create a Skill [&#8230;]]]></description>
+								<content:encoded><![CDATA[
+<table class="wp-block-table is-style-stripes"><tbody><tr><td><strong>Version:</strong></td><td> 2019.100 </td><td><strong>Requirements:</strong></td><td>uMMORPG2d, Tools</td><td><strong>Script Define:</strong></td><td>None</td></tr><tr><td><strong>Core Changes:</strong></td><td>No</td><td><strong>Tutorial Video:</strong></td><td>No</td><td></td><td></td></tr></tbody></table>
+
+
+<h2>Description</h2>
+<p>Removes all negative Buffs from the target. A negative Buff is any Buff that is set to &#8220;disadvantagous&#8221; (this can be done by using my Tools and you set it directly on the buff template).</p>
+<hr>
+<h2>Installation</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required] </strong></span>Create a <b>Skill </b>via the context menu and edit it&#8217;s settings.</li>
+<li><span style="color: #800000;"><strong>[Required] </strong></span>Add a new <strong>Animator State</strong> and <strong>Parameter</strong> for your skill.</li>
+</ol>
+
+
+<p></p>
+]]></content:encoded>
+							<wfw:commentRss>https://indie-mmo.net/knowledge-base/skill-target-cleanse-2d/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

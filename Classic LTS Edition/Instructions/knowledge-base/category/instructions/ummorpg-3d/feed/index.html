@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>uMMORPG 3d &#8211; Indie MMO</title>
+	<atom:link href="https://indie-mmo.net/knowledge-base/category/instructions/ummorpg-3d/feed/" rel="self" type="application/rss+xml" />
+	<link>https://indie-mmo.net</link>
+	<description>Helping you build your dream unity game through addons, assets, and support!</description>
+	<lastBuildDate>Thu, 21 Nov 2019 12:59:28 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+	<item>
+		<title>Taming</title>
+		<link>https://indie-mmo.net/knowledge-base/taming/</link>
+				<comments>https://indie-mmo.net/knowledge-base/taming/#respond</comments>
+				<pubDate>Thu, 21 Nov 2019 12:58:43 +0000</pubDate>
+		<dc:creator><![CDATA[Crow Obscured]]></dc:creator>
+		
+		<guid isPermaLink="false">https://indie-mmo.net/?post_type=epkb_post_type_1&#038;p=5817</guid>
+				<description><![CDATA[Version: 2019.200 Requirements: uMMORPG3d, Tools Script Define: None Core Changes: No Tutorial Video: No Description This AddOn allows you to Tame Monsters in game. Installation [Required] Visit your Player Prefabs and Fill in the Taming Time Frame, Taming Randomize Time Frame, As well as Taming Base Success Rate. [Required] To make a Monster Tamable, simply [&#8230;]]]></description>
+								<content:encoded><![CDATA[
+<figure class="wp-block-table is-style-stripes"><table class=""><tbody><tr><td><strong>Version:</strong></td><td> 2019.200 </td><td><strong>Requirements:</strong></td><td>uMMORPG3d, Tools</td><td><strong>Script Define:</strong></td><td> None</td></tr><tr><td><strong>Core Changes:</strong></td><td>No</td><td><strong>Tutorial Video:</strong></td><td>No</td><td></td><td></td></tr></tbody></table></figure>
+
+
+<h2>Description</h2>
+<p>This AddOn allows you to Tame Monsters in game.</p>
+<hr>
+<h2>Installation</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Visit your Player Prefabs and Fill in the Taming Time Frame, Taming Randomize Time Frame, As well as Taming Base Success Rate.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong></span> To make a Monster Tamable, simply fill in the Taming Reward information in the Monster Prefab.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>To start Taming, Create a new Taming Item, and fill in the Taming Information. Simply use that item in game when you have a Monster Targeted and thats it!</li>
+</ol>
+
+
+<p></p>
+]]></content:encoded>
+							<wfw:commentRss>https://indie-mmo.net/knowledge-base/taming/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>MySQL Integration</title>
+		<link>https://indie-mmo.net/knowledge-base/mysql-integration/</link>
+				<comments>https://indie-mmo.net/knowledge-base/mysql-integration/#respond</comments>
+				<pubDate>Tue, 05 Nov 2019 13:20:42 +0000</pubDate>
+		<dc:creator><![CDATA[Crow Obscured]]></dc:creator>
+		
+		<guid isPermaLink="false">https://indie-mmo.net/?post_type=epkb_post_type_1&#038;p=5786</guid>
+				<description><![CDATA[Version: 2019.200 Requirements: uMMORPG3d, Tools Script Define: _MYSQL Core Changes: Yes Tutorial Video: No Description The UCE Tools AddOn now provides both AddOn users and AddOn developers with a way to integrate mySQL into their projects. This integration is optional, more or less seamless and you can revert back to SQLite anytime. If you never [&#8230;]]]></description>
+								<content:encoded><![CDATA[
+<table class="wp-block-table is-style-stripes"><tbody><tr><td><strong>Version:</strong></td><td> 2019.200 </td><td><strong>Requirements:</strong></td><td>uMMORPG3d, Tools</td><td><strong>Script Define:</strong></td><td>_MYSQL</td></tr><tr><td><strong>Core Changes:</strong></td><td>Yes</td><td><strong>Tutorial Video:</strong></td><td>No</td><td></td><td></td></tr></tbody></table>
+
+
+<h2>Description</h2>
+<p>The UCE Tools AddOn now provides both AddOn users and AddOn developers with a way to integrate mySQL into their projects. This integration is optional, more or less seamless and you can revert back to SQLite anytime.<br /><br />If you never ever plan to use mySQL, you can ignore all modifications in this file and continue to use the default SQLite database. The script files in UCE Tools won&#8217;t harm or affect your project in any way.<br /><br />If you want to switch to mySQL, read the instructions below carefully and apply all changes. As this is a major core modification there are several steps required. When you are done, further integration of my AddOns will be seamless and they will also auto-adjust to mySQL. Finally, you can revert back to SQLite anytime.<br /><br /><span style="color: red;">Attention: When switching to mySQL, ALL AddOns and all of your script files will be forced to use it &#8211; I cannot provide you support or fixes for the community AddOns out there. I doubt the AddOns out there support mySQL, so they will break. You will have to update them yourself or contact their authors.</span><br /><br /><span style="color: red;">Note: If you are already using Paul&#8217;s mySQL AddOn &#8211; remove it and all mySQL.dlls with it. It is not required as it is part of my Tools now. Also make sure to remove all mySQL modifications applied already &#8211; they are now obsolete. UCE Tools takes care of this all!</span></p>
+<hr />
+<h2>Core Changes</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Open the following script <strong>NetworkManagerMMO.cs</strong>. <span class="collapseomatic " id="id5e03ce9933dc7"  tabindex="0" title="See Changes..."    >See Changes...</span><div id="target-id5e03ce9933dc7" class="collapseomatic_content ">Locate this line:
+<pre><code>public override void OnValidate()
+    {
+        base.OnValidate();
+
+        // ip has to be changed in the server list. make it obvious to users.
+        if (!Application.isPlaying &amp;&amp; networkAddress != "")
+            networkAddress = "Use the Server List below!";
+
+        // need enough character selection locations for character limit
+        if (selectionLocations.Length != characterLimit)
+        {
+            // create new array with proper size
+            Transform[] newArray = new Transform[characterLimit];
+
+            // copy old values
+            for (int i = 0; i &lt; Mathf.Min(characterLimit, selectionLocations.Length); ++i)
+                newArray[i] = selectionLocations[i];
+
+            // use new array
+            selectionLocations = newArray;
+        }
+    }</code></pre>
+<p>Modify to match:</p>
+<pre><code>public override void OnValidate()
+    {
+        base.OnValidate();
+
+        // ip has to be changed in the server list. make it obvious to users.
+        if (!Application.isPlaying &amp;&amp; networkAddress != "")
+            networkAddress = "Use the Server List below!";
+
+        // need enough character selection locations for character limit
+        if (selectionLocations.Length != characterLimit)
+        {
+            // create new array with proper size
+            Transform[] newArray = new Transform[characterLimit];
+
+            // copy old values
+            for (int i = 0; i &lt; Mathf.Min(characterLimit, selectionLocations.Length); ++i)
+                newArray[i] = selectionLocations[i];
+
+            // use new array
+            selectionLocations = newArray;
+        }
+        
+        <span style="color: #0000ff;">Utils.InvokeMany(typeof(NetworkManagerMMO), this, "OnValidate_");		// Fhiz Core Change</span>
+    }</code></pre>
+</div>
+</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Open the following script <strong>Database.cs</strong>. <span class="collapseomatic " id="id5e03ce9933e19"  tabindex="0" title="See Changes..."    >See Changes...</span><div id="target-id5e03ce9933e19" class="collapseomatic_content ">Add this line to the Beginning:
+<pre><code>#if _SQLITE</code></pre>
+<p>Add this lin to the End:</p>
+<pre><code>#endif</code></pre>
+</div>
+</li>
+</ol>
+<hr />
+<h2>Installation</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Apply core changes as stated above first.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Make sure that you updated all UCE AddOns (by Fhiz) to the latest version.</li>
+<li><span style="color: #800000;"><strong>[Required] </strong></span><span style="color: red;">Double check if you are using third party AddOns, if they support mySQL or better remove them (they will break).</span></li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Install latest mySQL on your server <a href="https://dev.mysql.com/downloads/">https://dev.mysql.com/downloads/</a></li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>You can find some basic information about mySQL installation and setup here: <a href="https://www.ionos.com/community/hosting/mysql/install-and-use-mysqlmariadb/">https://www.ionos.com/community/hosting/mysql/install-and-use-mysqlmariadb/</a></li>
+<li><strong><span style="color: #000080;">[Optioanl]</span></strong> Set character encoding (if MySQL version 7 or earlier) If using MySQL 7 or earlier, the default character set is `latin1`, which causes problems for the mysql driver. You need to change it to utf8mb4 or you will get exceptions edit my.cnf or my.ini and add these settings:<br />
+<pre><code>
+[mysqld]
+init_connect='SET collation_connection = utf8mb4_unicode_ci' <br />
+init_connect='SET NAMES utf8mb4' <br />
+character-set-server=utf8mb4 <br />
+collation-server=utf8mb4_unicode_ci<br /> 
+</code></pre>
+</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Create a database. For example:<br />
+<pre><code>
+create database ummorpg;
+</code></pre>
+</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Create a user for your database. For example:<br />
+<pre><code>
+create user 'ummorpg'@'%'  identified by 'db_password';
+</code></pre>
+</li>
+<li><span style="color: #800000;"><strong>[Required]</strong></span> Grant your user the required privileges. For example:</li>
+<li><span style="color: #800000;"><strong>[Required]</strong></span> Restart mySQL. e.g. via linux command line:</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Go to your NetworkManager, in the inspector locate the new &#8220;Database Type&#8221; Setting and switch from SQLite to mySQL.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong></span> Wait a few seconds and allow the UnityEditor to update everything.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Edit the new property slots that are now showing by entering your mySQL database credentials.</li>
+<li><span style="color: #000080;"><strong>[Optional]</strong> </span>Now build and/or run your game.</li>
+</ol>
+<hr />
+<h2>Extras</h2>
+<p>When switching databases back and forth, only the currently active database code is included in your build.<br /><br />You can easily switch back and forth on NetworkManager, this allows for quick testing using SQLite and mySQL in your game production environment.<br /><br />When running from the editor while using a remotely hosted database, expect lag. Especially when saving characters. Imagine your server is your local Editor while the database is hosted somewhere else.<br /><br />When you cannot connect from editor to a remote database, make sure it accepts remote connections.<br /><br />The two scripting defines that are used are _MYSQL and _SQLITE &#8211; should you ever have to add/remove them manually.<br /><br />While there are red console errors in your project, the AddOn won&#8217;t be able to add the _MYSQL / _SQLITE defines. This can result in the fact that the whole database is not working as expected. You should therefore fix all errors first and then make sure the defines have been set. Its a good idea to switch back/forth database once to trigger the defines being set. Or add manually when in doubt.<br /><br /><span style="color: red;">Do not play around with the database setting on Network Manager before you finished all the integration steps first!</span></p>
+<hr />
+<h2>Security Considerations</h2>
+<p>Before compiling a client, delete your database credentials from the NetworkManager (or overwrite them with junk). This way they won&#8217;t be available at the client at all and cannot be exposed by hacking.<br /><br />Just note your credentials somewhere and dont forget to re-enter them when compiling a server.</p>
+
+
+<p></p>
+]]></content:encoded>
+							<wfw:commentRss>https://indie-mmo.net/knowledge-base/mysql-integration/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Skill &#8211; Trigger On Death</title>
+		<link>https://indie-mmo.net/knowledge-base/skill-trigger-on-death/</link>
+				<comments>https://indie-mmo.net/knowledge-base/skill-trigger-on-death/#respond</comments>
+				<pubDate>Tue, 05 Nov 2019 13:17:32 +0000</pubDate>
+		<dc:creator><![CDATA[Crow Obscured]]></dc:creator>
+		
+		<guid isPermaLink="false">https://indie-mmo.net/?post_type=epkb_post_type_1&#038;p=5783</guid>
+				<description><![CDATA[Version: 2019.200 Requirements: uMMORPG3d, Tools Script Define: None Core Changes: No Tutorial Video: No Description Triggers a skill when the entity dies. Installation [Required] Simply import addon and modify new Death Skill settings on entities. Extra You can assign more than one skill, a random one will be triggered when the Entity is defeated. Min [&#8230;]]]></description>
+								<content:encoded><![CDATA[
+<table class="wp-block-table is-style-stripes"><tbody><tr><td><strong>Version:</strong></td><td> 2019.200 </td><td><strong>Requirements:</strong></td><td>uMMORPG3d, Tools</td><td><strong>Script Define:</strong></td><td>None</td></tr><tr><td><strong>Core Changes:</strong></td><td>No</td><td><strong>Tutorial Video:</strong></td><td>No</td><td></td><td></td></tr></tbody></table>
+
+
+<h2>Description</h2>
+<p>Triggers a skill when the entity dies.</p>
+<hr />
+<h2>Installation</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required] </strong></span>Simply import addon and modify new <strong>Death Skill</strong> settings on entities.</li>
+</ol>
+<hr />
+<h2>Extra</h2>
+<ul>
+<li>You can assign more than one skill, a random one will be triggered when the Entity is defeated.</li>
+<li>Min and Max skill levels are determined randomly, same for all skills &#8211; make sure your skills have enough levels.</li>
+</ul>
+
+
+<p></p>
+]]></content:encoded>
+							<wfw:commentRss>https://indie-mmo.net/knowledge-base/skill-trigger-on-death/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Network Spawner</title>
+		<link>https://indie-mmo.net/knowledge-base/network-spawner/</link>
+				<comments>https://indie-mmo.net/knowledge-base/network-spawner/#respond</comments>
+				<pubDate>Sun, 03 Nov 2019 21:23:21 +0000</pubDate>
+		<dc:creator><![CDATA[Crow Obscured]]></dc:creator>
+		
+		<guid isPermaLink="false">https://indie-mmo.net/?post_type=epkb_post_type_1&#038;p=5779</guid>
+				<description><![CDATA[Version: 2019.200 Requirements: uMMORPG3d, Tools Script Define: None Core Changes: No Tutorial Video: No Description A very simple network spawner to fix the &#8220;scene id not found&#8221; issue. it spawns prefabs after the scene is loaded. Installation [Required] Place &#8220;UCE_NetworkSpawner&#8221; prefab anywhere in your scene. [Required]* Edit the list on the NetworkSpawner and add all [&#8230;]]]></description>
+								<content:encoded><![CDATA[
+<table class="wp-block-table is-style-stripes"><tbody><tr><td><strong>Version:</strong></td><td> 2019.200 </td><td><strong>Requirements:</strong></td><td>uMMORPG3d, Tools</td><td><strong>Script Define:</strong></td><td>None</td></tr><tr><td><strong>Core Changes:</strong></td><td>No</td><td><strong>Tutorial Video:</strong></td><td>No</td><td></td><td></td></tr></tbody></table>
+
+
+<h2>Description</h2>
+<p>A very simple network spawner to fix the &#8220;scene id not found&#8221; issue. it spawns prefabs after the scene is loaded.</p>
+<hr />
+<h2>Installation</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Place &#8220;UCE_NetworkSpawner&#8221; prefab anywhere in your scene.</li>
+<li><span style="color: #800000;"><strong>[Required]* </strong></span>Edit the list on the NetworkSpawner and add all objects and their locations where you want them to spawn.<br /><em>Note: That those objects can also be other types of spawners or trigger zones by themselves.</em></li>
+<li><span style="color: #800000;"><strong>[Required]</strong></span> Make sure those objects have a NetworkIdentity and are listed in your NetworkManagers spawnable prefabs.</li>
+</ol>
+<hr />
+<h2>Extra</h2>
+<ul>
+<li>After spawning, the spawner destroys itself.</li>
+<li>No IEnumerator on the spawn process yet, but could easily be added.</li>
+<li>For some reason that I dont remember, the spawn starts when the very first &#8220;update&#8221; is called instead of &#8220;start&#8221; or &#8220;awake&#8221;.</li>
+</ul>
+
+
+<p></p>
+]]></content:encoded>
+							<wfw:commentRss>https://indie-mmo.net/knowledge-base/network-spawner/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Limited Zones</title>
+		<link>https://indie-mmo.net/knowledge-base/limited-zones/</link>
+				<comments>https://indie-mmo.net/knowledge-base/limited-zones/#respond</comments>
+				<pubDate>Thu, 31 Oct 2019 15:36:09 +0000</pubDate>
+		<dc:creator><![CDATA[Crow Obscured]]></dc:creator>
+		
+		<guid isPermaLink="false">https://indie-mmo.net/?post_type=epkb_post_type_1&#038;p=5706</guid>
+				<description><![CDATA[Version: 2019.200 Requirements: uMMORPG3d, Tools Script Define: _IMMOLIMITEDZONES Core Changes: No Tutorial Video: No Description This AddOn allows you to create areas within your scene that can only be entered by a limited amount of players, a limited amount of parties, a limited amount of guilds, a limited amount of realms and several other limitations. [&#8230;]]]></description>
+								<content:encoded><![CDATA[
+<table class="wp-block-table is-style-stripes"><tbody><tr><td><strong>Version:</strong></td><td> 2019.200 </td><td><strong>Requirements:</strong></td><td>uMMORPG3d, Tools</td><td><strong>Script Define:</strong></td><td> _IMMOLIMITEDZONES</td></tr><tr><td><strong>Core Changes:</strong></td><td>No</td><td><strong>Tutorial Video:</strong></td><td>No</td><td></td><td></td></tr></tbody></table>
+
+
+<h2>Description</h2>
+<p>This AddOn allows you to create areas within your scene that can only be entered by a limited amount of players, a limited amount of parties, a limited amount of guilds, a limited amount of realms and several other limitations. In addition you can set entrance costs when combined with &#8220;UCE Honor Shop&#8221;.</p>
+<p>This AddOn makes it very easy to create a PVP arena or guild battleground. But you can also limit the dungeons in your game by only allowing a few parties at a time to enter it.</p>
+<hr />
+<h2>Installation</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Drag everything from UI (Drag to Canvas) to your Canvas</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Add the &#8220;LimitedZonesManager&#8221; prefab anywhere to your scene.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>For each Limited Zone add &#8220;LimitedZonesArea&#8221; and at least one &#8220;LimitedZonesPortal&#8221; to your scene.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong></span> Players should only be able to enter a &#8220;LimitedZonesArea&#8221; via the &#8220;LimitedZonesPortal&#8221;, never by other means.</li>
+<li>[Required] Players can leave a instance any way you like.</li>
+<li>[Required] Add each &#8220;LimitedZonesArea&#8221; to your &#8220;LimitedZonesManager&#8221; by adding a new entry and edit its data.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong></span> Edit each &#8220;LimitedZonesArea&#8221; in your scene to set requirements and various group limitations.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong></span> When entering a &#8220;LimitedZonesPortal&#8221; your players will be presented with a list of instances they can teleport to. The Instance manager will update the player and group count and allow or disallow new players entering.</li>
+<li><span style="color: #000080;"><strong>[Optional]</strong> </span>You can assign each instance a id (any number) and the portals can feature an id as well, to only show up instances of that id.</li>
+<li><span style="color: #000080;"><strong>[Optional]</strong></span> Of course you can have multiple entrance portals to a &#8220;LimitedZonesArea&#8221; area.</li>
+</ol>
+
+
+<p></p>
+]]></content:encoded>
+							<wfw:commentRss>https://indie-mmo.net/knowledge-base/limited-zones/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Sync Entity Positions</title>
+		<link>https://indie-mmo.net/knowledge-base/sync-entity-positions/</link>
+				<comments>https://indie-mmo.net/knowledge-base/sync-entity-positions/#respond</comments>
+				<pubDate>Thu, 31 Oct 2019 15:07:03 +0000</pubDate>
+		<dc:creator><![CDATA[Crow Obscured]]></dc:creator>
+		
+		<guid isPermaLink="false">https://indie-mmo.net/?post_type=epkb_post_type_1&#038;p=5684</guid>
+				<description><![CDATA[Version: 2019.200 Requirements: uMMORPG3d, Tools Script Define: None Core Changes: Yes Tutorial Video: No Description This Addon will try to sync monster position with every client near him when he stops moving or start casting a skill. Core Changes [Required] Open the following script Monster.cs. [Required]Open the following script Player.cs. [Required] Open the following script [&#8230;]]]></description>
+								<content:encoded><![CDATA[
+<table class="wp-block-table is-style-stripes"><tbody><tr><td><strong>Version:</strong></td><td> 2019.200 </td><td><strong>Requirements:</strong></td><td>uMMORPG3d, Tools</td><td><strong>Script Define:</strong></td><td>None</td></tr><tr><td><strong>Core Changes:</strong></td><td>Yes</td><td><strong>Tutorial Video:</strong></td><td>No</td><td></td><td></td></tr></tbody></table>
+
+
+<h2>Description</h2>
+<p>This Addon will try to sync monster position with every client near him when he stops moving or start casting a skill.</p>
+<hr />
+<h2>Core Changes</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Open the following script <strong>Monster.cs</strong>. <span class="collapseomatic " id="id5e03ce99367ee"  tabindex="0" title="See Changes..."    >See Changes...</span><div id="target-id5e03ce99367ee" class="collapseomatic_content ">Locate this line:
+<pre><code> agent.ResetMovement();</code></pre>
+<p>Replace with this line:</p>
+<pre><code>ResetMovementAll();</code></pre>
+</div>
+</li>
+<li><span style="color: #800000;"><strong>[Required]</strong></span>Open the following script <strong>Player.cs</strong>. <span class="collapseomatic " id="id5e03ce9936814"  tabindex="0" title="See Changes..."    >See Changes...</span><div id="target-id5e03ce9936814" class="collapseomatic_content "><span style="color: #800000;"><strong>[Attention]</strong> </span>Do <strong>NOT</strong> replace the <strong>agent.ResetMovement();</strong> in WASD movement function inside the <strong>Player.cs</strong>, all others are fine.<br />Locate this line:
+<pre><code> agent.ResetMovement();</code></pre>
+<p>Replace with this line:</p>
+<pre><code>ResetMovementAll();</code></pre>
+</div>
+</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Open the following script <strong>Pet.cs</strong>. <span class="collapseomatic " id="id5e03ce993684b"  tabindex="0" title="See Changes..."    >See Changes...</span><div id="target-id5e03ce993684b" class="collapseomatic_content ">Locate this line:
+<pre><code> agent.ResetMovement();</code></pre>
+<p>Replace with this line:</p>
+<pre><code>ResetMovementAll();</code></pre>
+</div>
+</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Open the following script <strong>Mount.cs</strong>. <span class="collapseomatic " id="id5e03ce9936869"  tabindex="0" title="See Changes..."    >See Changes...</span><div id="target-id5e03ce9936869" class="collapseomatic_content ">Locate this line:
+<pre><code> agent.ResetMovement();</code></pre>
+<p>Replace with this line:</p>
+<pre><code>ResetMovementAll();</code></pre>
+</div>
+</li>
+</ol>
+<hr />
+<h2>Installation</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Apply all core changes.</li>
+</ol>
+
+
+<p></p>
+]]></content:encoded>
+							<wfw:commentRss>https://indie-mmo.net/knowledge-base/sync-entity-positions/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Skill &#8211; Backstab</title>
+		<link>https://indie-mmo.net/knowledge-base/skill-backstab/</link>
+				<comments>https://indie-mmo.net/knowledge-base/skill-backstab/#respond</comments>
+				<pubDate>Thu, 31 Oct 2019 15:06:52 +0000</pubDate>
+		<dc:creator><![CDATA[Crow Obscured]]></dc:creator>
+		
+		<guid isPermaLink="false">https://indie-mmo.net/?post_type=epkb_post_type_1&#038;p=5682</guid>
+				<description><![CDATA[Version: 2019.200 Requirements: uMMORPG3d, Tools Script Define: None Core Changes: No Tutorial Video: No Description This Addon allows the player to use a skill for teleport behind the target and damage him. Installation [Required] Create a Skill via the context menu and edit it&#8217;s settings. [Required] Add a new Animator State and Parameter for your [&#8230;]]]></description>
+								<content:encoded><![CDATA[
+<table class="wp-block-table is-style-stripes"><tbody><tr><td><strong>Version:</strong></td><td> 2019.200 </td><td><strong>Requirements:</strong></td><td>uMMORPG3d, Tools</td><td><strong>Script Define:</strong></td><td>None</td></tr><tr><td><strong>Core Changes:</strong></td><td>No</td><td><strong>Tutorial Video:</strong></td><td>No</td><td></td><td></td></tr></tbody></table>
+
+
+<h2>Description</h2>
+<p>This Addon allows the player to use a skill for teleport behind the target and damage him.</p>
+<hr>
+<h2>Installation</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required] </strong></span>Create a <b>Skill </b>via the context menu and edit it&#8217;s settings.</li>
+<li><span style="color: #800000;"><strong>[Required] </strong></span>Add a new <strong>Animator State</strong> and <strong>Parameter</strong> for your skill.</li>
+</ol>
+
+
+<p></p>
+]]></content:encoded>
+							<wfw:commentRss>https://indie-mmo.net/knowledge-base/skill-backstab/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Skill &#8211; Dash</title>
+		<link>https://indie-mmo.net/knowledge-base/skill-dash/</link>
+				<comments>https://indie-mmo.net/knowledge-base/skill-dash/#respond</comments>
+				<pubDate>Thu, 31 Oct 2019 15:06:36 +0000</pubDate>
+		<dc:creator><![CDATA[Crow Obscured]]></dc:creator>
+		
+		<guid isPermaLink="false">https://indie-mmo.net/?post_type=epkb_post_type_1&#038;p=5680</guid>
+				<description><![CDATA[Version: 2019.200 Requirements: uMMORPG3d, Tools Script Define: None Core Changes: No Tutorial Video: No Description This Addon allows the player to use a skill for dashing in the direction the player/enemy is moving. Installation [Required] Create a Skill via the context menu and edit it&#8217;s settings. [Required] Add a new Animator State and Parameter for [&#8230;]]]></description>
+								<content:encoded><![CDATA[
+<table class="wp-block-table is-style-stripes"><tbody><tr><td><strong>Version:</strong></td><td> 2019.200 </td><td><strong>Requirements:</strong></td><td>uMMORPG3d, Tools</td><td><strong>Script Define:</strong></td><td>None</td></tr><tr><td><strong>Core Changes:</strong></td><td>No</td><td><strong>Tutorial Video:</strong></td><td>No</td><td></td><td></td></tr></tbody></table>
+
+
+<h2>Description</h2>
+<p>This Addon allows the player to use a skill for dashing in the direction the player/enemy is moving.</p>
+<hr>
+<h2>Installation</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required] </strong></span>Create a <b>Skill </b>via the context menu and edit it&#8217;s settings.</li>
+<li><span style="color: #800000;"><strong>[Required] </strong></span>Add a new <strong>Animator State</strong> and <strong>Parameter</strong> for your skill.</li>
+</ol>
+<hr>
+<h2>Screenshots</h2>
+<p><img class="alignnone size-full wp-image-5719" src="https://indie-mmo.net/wp-content/uploads/2019/10/download.png" alt="" width="498" height="126"></p>
+
+
+<p></p>
+]]></content:encoded>
+							<wfw:commentRss>https://indie-mmo.net/knowledge-base/skill-dash/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Extra Skillbar</title>
+		<link>https://indie-mmo.net/knowledge-base/extra-skillbar/</link>
+				<comments>https://indie-mmo.net/knowledge-base/extra-skillbar/#respond</comments>
+				<pubDate>Thu, 31 Oct 2019 13:45:51 +0000</pubDate>
+		<dc:creator><![CDATA[Crow Obscured]]></dc:creator>
+		
+		<guid isPermaLink="false">https://indie-mmo.net/?post_type=epkb_post_type_1&#038;p=5620</guid>
+				<description><![CDATA[Version: 2019.200 Requirements: uMMORPG3d, Tools Script Define: None Core Changes: No Tutorial Video: No Description Allows you to create equipment specific extra-skillbars. Adds an extra skillbar above the default one, assign keys to it via the player prefabs. Each weapon can have an ID number now. When changing equipment the extra skillbar of the corresponding [&#8230;]]]></description>
+								<content:encoded><![CDATA[
+<table class="wp-block-table is-style-stripes"><tbody><tr><td><strong>Version:</strong></td><td> 2019.200 </td><td><strong>Requirements:</strong></td><td>uMMORPG3d, Tools</td><td><strong>Script Define:</strong></td><td>None</td></tr><tr><td><strong>Core Changes:</strong></td><td>No</td><td><strong>Tutorial Video:</strong></td><td>No</td><td></td><td></td></tr></tbody></table>
+
+
+<h2>Description</h2>
+<p>Allows you to create equipment specific extra-skillbars.<br /><br />Adds an extra skillbar above the default one, assign keys to it via the player prefabs. Each weapon can have an ID number now. When changing equipment the extra skillbar of the corresponding ID is shown.<br /><br />Now players can assign skill sets to these extra skillbars and when switching weapon, the correct skillbar is shown. Example: Equipping an &#8220;Axe&#8221; shows skillbar ID 1. Then the player can add &#8220;Axe skills&#8221; to that skillbar. Whenever switching to an Axe, the skillbar 1 is shown together with all axe skills assigned to it.</p>
+<hr />
+<h2>Installation</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>Add the new skillbar prefab to your canvas, place it above the default one.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong> </span>On each equipable item, there is now a &#8220;skillbarIndex&#8221;, set to 0 to disable the skillbar for this item.</li>
+<li><span style="color: #000080;"><strong>[Optional]</strong> </span>Play a bit with the settings: When equipping an item with skillbarIndex greater than 0, it will show that skillbar and the player can assign skills to it. When equipping a item with index 0, it will hide the skillbar again.</li>
+</ol>
+<hr />
+<h2>Extra</h2>
+<ul>
+<li>
+<p>All extra skillbars are saved client side, so the player could setup a skillbar for each index number (1=axes, 2=swords, 3=daggers and so on).</p>
+</li>
+<li>Of course, this AddOn only makes sense with Weapon items, but it works with every equipment slot. You should just be careful that the player is <b>not</b> able to equip several items with a skillbar index at the same time, as this will mess up the system.</li>
+</ul>
+
+
+<p></p>
+]]></content:encoded>
+							<wfw:commentRss>https://indie-mmo.net/knowledge-base/extra-skillbar/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Chairs</title>
+		<link>https://indie-mmo.net/knowledge-base/chairs/</link>
+				<comments>https://indie-mmo.net/knowledge-base/chairs/#respond</comments>
+				<pubDate>Mon, 28 Oct 2019 18:27:43 +0000</pubDate>
+		<dc:creator><![CDATA[Crow Obscured]]></dc:creator>
+		
+		<guid isPermaLink="false">https://indie-mmo.net/?post_type=epkb_post_type_1&#038;p=5595</guid>
+				<description><![CDATA[Version: 2019.200 Requirements: uMMORPG3d, Tools Script Define: None Core Changes: No Tutorial Video: No Description This AddOn allows you to setup chairs to be occupied by 1 Player at a time. You can setup a Parent GameObject with Children that contain the UCE_ChairAddon to allow multiple seats per chair (Children each require Colliders, Spacing them [&#8230;]]]></description>
+								<content:encoded><![CDATA[
+<table class="wp-block-table is-style-stripes"><tbody><tr><td><strong>Version:</strong></td><td> 2019.200 </td><td><strong>Requirements:</strong></td><td>uMMORPG3d, Tools</td><td><strong>Script Define:</strong></td><td>None</td></tr><tr><td><strong>Core Changes:</strong></td><td>No</td><td><strong>Tutorial Video:</strong></td><td>No</td><td></td><td></td></tr></tbody></table>
+
+
+<h2>Description</h2>
+<p>This AddOn allows you to setup chairs to be occupied by 1 Player at a time. You can setup a Parent GameObject with Children that contain the UCE_ChairAddon to allow multiple seats per chair (Children each require Colliders, Spacing them apart for easy accessibility).</p>
+<hr />
+<h2>Installation</h2>
+<ol>
+<li><span style="color: #800000;"><strong>[Required]</strong></span> For all Player Prefab Animators, Add a Bool labeled &#8220;Sit&#8221;, Add a new Empty State, Add a Transition from &#8216;Any State&#8217; to your new Empty State, Select the Transition and Add a new Condition of Bool &#8216;Sit&#8217; to True. Click Settings in the new State and De-Select Can Transition to Self.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong></span> Also add a new condition to the Idle state of &#8216;Sit&#8217; to false.</li>
+<li><span style="color: #800000;"><strong>[Required]</strong></span> To setup a Chair, follow the same steps when creating a base UCE_InteractableObject prefab, but instead replacing script &#8216;UCE_InteractableObject&#8217; with &#8216;UCE_ChairAddon&#8217; Thats it!</li>
+</ol>
+<hr />
+<h2>Screenshot</h2>
+<p><img class="alignnone size-full wp-image-5597" src="https://indie-mmo.net/wp-content/uploads/2019/10/c7af2f48c9485f9cac4e5d63088fd041.png" alt="" width="418" height="88" /></p>
+
+
+<p></p>
+]]></content:encoded>
+							<wfw:commentRss>https://indie-mmo.net/knowledge-base/chairs/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>
