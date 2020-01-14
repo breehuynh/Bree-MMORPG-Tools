@@ -10,7 +10,7 @@
   
 ------
   
-# Boba uMMORPG Classic (LTS Release) AddOns v1.84
+# Boba uMMORPG Classic (LTS Release) v1.84
 
 ------
 
