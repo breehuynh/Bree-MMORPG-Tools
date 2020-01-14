@@ -6,11 +6,11 @@
 
 ------
 
-# Boba uMMORPG CE (BETA Release) v2.1
+## Boba uMMORPG CE (BETA Release) v2.1
   
 ------
   
-# Boba uMMORPG Classic (LTS Release) v1.84
+## Boba uMMORPG Classic (LTS Release) v1.84
 
 ------
 
