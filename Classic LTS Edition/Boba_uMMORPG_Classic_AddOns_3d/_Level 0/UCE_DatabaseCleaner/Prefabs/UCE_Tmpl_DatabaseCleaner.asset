@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0330b68c4c8204661b28a6a4f3375549, type: 3}
+  m_Name: UCE_Tmpl_DatabaseCleaner
+  m_EditorClassIdentifier: 
+  isActive: 1
+  PruneInactiveAfterDays: 0
+  PruneBannedAfterDays: 0
+  PruneEmptyAccounts: 1
+  characterTables:
+  - character_lastonline
+  - character_timegates
+  - character_dailyrewards
+  - character_exploration
+  - character_travelroutes
+  - character_recipes
+  - character_professions
+  - character_bindpoint
+  - character_currencies
+  - character_UCE_quests
+  - character_friends
+  - character_purchases
+  - character_attributes
+  - character_crafts
+  - character_UCE_attributes
+  - character_UCE_traits
+  - character_factions
+  - permanent_objects
+  accountTables:
+  - account_lastonline
+  - account_admin

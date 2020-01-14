@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c34dbcf153e54546a534f7ece949e92, type: 3}
+  m_Name: Craft Potions [Original]
+  m_EditorClassIdentifier: 
+  levels: 050000000a0000000f000000
+  categories:
+  - All
+  - Health Potions
+  - Mana Potions
+  image: {fileID: 21300000, guid: 8874e8dd9229049199cbe9e07cc6adb3, type: 3}
+  animatorState: 
+  toolTip: Allows to craft Potion recipes.

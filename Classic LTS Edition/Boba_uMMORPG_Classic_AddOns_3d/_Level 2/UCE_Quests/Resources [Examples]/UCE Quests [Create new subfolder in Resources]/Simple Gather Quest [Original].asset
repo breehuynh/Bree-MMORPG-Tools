@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd43f16fdb0ce4722874bc9eec6aba99, type: 3}
+  m_Name: Simple Gather Quest [Original]
+  m_EditorClassIdentifier: 
+  repeatable: 0
+  showRewards: 1
+  toolTip: '<b>{NAME}</b>
+
+    Gather two health potions and one mana potion. You get a bit of gold as reward
+    and can keep the potions.
+
+
+    Tasks:
+
+    {GATHERTARGET}
+
+
+    Rewards:
+
+    * {REWARDGOLD} Gold
+
+    * {REWARDEXPERIENCE} Experience
+
+    * {REWARDCOINS} Coins
+
+    {REWARDITEMS}
+
+
+    {REPEATABLE}'
+  questRequirements:
+    isActive: 1
+    aliveOnly: 1
+    stateType: 0
+    minLevel: 0
+    maxLevel: 0
+    minHealth: 0
+    minMana: 0
+    requiredSkills: []
+    requiresAllSkills: 0
+    requiredBuff: {fileID: 0}
+    prohibitedBuff: {fileID: 0}
+    allowedClasses: []
+    requiresParty: 0
+    requiresGuild: 0
+    requiredEquipment: []
+    requiresAllEquipment: 0
+    requiredItems: []
+    requiresAllItems: 0
+    allowedPrestigeClasses: []
+    requiredAttributes: []
+    requiresAllAttributes: 0
+    requiredRealm: {fileID: 0}
+    requiredAlly: {fileID: 0}
+    lootableBy: 0
+    requiredQuest: {fileID: 0}
+    questMustBeInProgress: 0
+    factionRequirements: []
+    requiresAllFactionRatings: 0
+    harvestProfessionRequirements: []
+    requiresAllHarvestingProfessions: 0
+    craftProfessionRequirements: []
+    requiresAllCraftingProfessions: 0
+    mountType: 0
+  acceptItems: []
+  removeAtCompletion: 0
+  questRewards:
+  - rewardChance: 1
+    availableToClass: []
+    rewardGold: 5
+    rewardCoins: 0
+    rewardExperience: 1
+    rewardItem: []
+    rewardUnlockroutes: []
+    honorCurrency: []
+    changeRealm: {fileID: 0}
+    changeAlliedRealm: {fileID: 0}
+  factionModifiers: []
+  exploreTarget: []
+  harvestTarget: []
+  craftTarget: []
+  lootTarget: []
+  factionRequirement:
+    faction: {fileID: 0}
+    min: 0
+  visitTarget: []
+  pvpTarget: []
+  killTarget: []
+  gatherTarget:
+  - target: {fileID: 11400000, guid: ae0314505b06f4f1280aa735db1c70e8, type: 2}
+    amount: 2
+  - target: {fileID: 11400000, guid: 2608a09a88215491fbe878f632afe522, type: 2}
+    amount: 1
+  DontDestroyGathered: 1
+  autoCompleteQuest: 0
+  headerPvpTarget: '* Kill Players '
+  headerKillTarget: '* Kill Monsters '
+  headerGatherTarget: '* Gather Items '
+  headerVisitTarget: '* Visit Npc''s '
+  headerExploreTarget: '* Explore Areas '
+  headerHarvestTarget: '* Harvest Resources '
+  headerCraftTarget: '* Craft Items '
+  headerLootTarget: '* Loot Crates '
+  headerFactionTarget: '* Faction Requirement '
+  pvpDescription:
+    pvpKill: 'Kill '
+    pvpPlayer: ' Player(s) '
+    pvpLevel: ' level '
+    pvpParty: Party.
+    pvpGuild: Guild.
+    pvpRealm: Realm.
+    pvpNot: ' Not '
+    pvpMy: 'in my '

@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84eed4e77087417786ecac1a1bde5ad5, type: 3}
+  m_Name: Health Potion Recipe [Original]
+  m_EditorClassIdentifier: 
+  category: Health Potions
+  image: {fileID: 21300000, guid: 07a54f0fd6b6f4f2bb63a7f654dbfeb5, type: 3}
+  requiredCraft: {fileID: 11400000, guid: 0dcb20c4822b3424f8b82f9a8346b4a1, type: 2}
+  minSkillLevel: 1
+  ProfessionExperienceRewardMin: 0
+  ProfessionExperienceRewardMax: 2
+  ingredients:
+  - item: {fileID: 11400000, guid: 2608a09a88215491fbe878f632afe522, type: 2}
+    amount: 1
+    DontDestroyOnFailure: 0
+    DontDestroyOnCriticalSuccess: 0
+  manaCost: 0
+  experience: 2
+  skillExp: 1
+  defaultResult:
+  - item: {fileID: 11400000, guid: ae0314505b06f4f1280aa735db1c70e8, type: 2}
+    amount: 1
+    DontDestroyOnFailure: 0
+    DontDestroyOnCriticalSuccess: 0
+  failureResult: []
+  criticalResult: []
+  probability: 0.75
+  criticalProbability: 0.05
+  failureProbability: 0.5
+  duration: 10
+  requiresAllTools: 0
+  tools:
+  - requiredItem: {fileID: 11400000, guid: ebde5c85fd92e499493a5ae898bef3cb, type: 2}
+    equippedItem: 1
+    toolDestroyChance: 0
+    modifyProbability: 0
+    modifyCriticalProbability: 0
+    modifyExperienceMin: 0
+    modifyExperienceMax: 0
+    modifyDuration: -1
+  optionalTools: []
+  probabilityPerSkillLevel: 0.05
+  durationPerSkillLevel: -1
+  criticalResultPerSkillLevel: 0
+  failureResultPerSkillLevel: 0
+  mustBeEquipped: ' [Equipped]'
+  notGuaranteed: ' [No Guarantee]'
+  toolTip: '-=-=-=- {NAME} -=-=-=-
+
+    Craft Skill: {SKILLNAME} [{MINSKILLLVL}+]
+
+    Success Probability: {PROBABILITY} [+{PROBABILITYBONUS}% per Skill Level]
+
+    Crafting Duration: {DURATION} [{DURATIONBONUS}s per Skill Level]
+
+    -=-=-=- INGREDIENTS -=-=-=-
+
+    {INGREDIENTS}
+
+    -=-=-=- TOOLS -=-=-=-
+
+    {TOOLS}
+
+    -=-=-=- BOOSTERS (Optional) -=-=-=-
+
+    {BOOSTERS}
+
+    -=-=-=- RESULTS -=-=-=-
+
+    Default Result: {DEFAULTRESULT}
+
+    Critical Result: {CRITICALRESULT}
+
+    Failure Result: {FAILURERESULT}'

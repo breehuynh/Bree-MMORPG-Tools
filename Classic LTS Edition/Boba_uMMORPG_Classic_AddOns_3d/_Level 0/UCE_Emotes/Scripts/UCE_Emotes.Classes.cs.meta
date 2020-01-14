@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: c9c417b287c0a4ab382c8dfe62f0cd81
+timeCreated: 1532287337
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - pressShift1: {fileID: 180048, guid: 8ca58e671ebfdd14882d8e7a8054ee8d, type: 2}
+  - pressShift2: {fileID: 143880, guid: 49d4a2005d587ef4dbd81f40432fced2, type: 2}
+  - pressShift3: {fileID: 156528, guid: d02b43d32bf07a44f93d5a818698299b, type: 2}
+  - pressShift4: {fileID: 180600, guid: 050ba674b44f361458bbe676dd120977, type: 2}
+  - pressShift5: {fileID: 120732, guid: 3ee1052fd1e18a545982370ffdd76466, type: 2}
+  - pressShift6: {fileID: 158680, guid: cf5bd0cc89998e64a9c4b1c38c3699c9, type: 2}
+  - pressShift7: {fileID: 191538, guid: 58ccc80229e3cf04caa4c4237ce8ca15, type: 2}
+  - pressShift8: {fileID: 133812, guid: 192db8d8d5eead44ba42b2b8076d5713, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
