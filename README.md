@@ -6,11 +6,11 @@
 
 ------
 
-# Boba uMMORPG CE Tools v2.1
+# Boba uMMORPG CE (BETA Release) v2.1
   
 ------
   
-# Boba uMMORPG LTS Tools v1.83
+# Boba uMMORPG Classic (LTS Release) AddOns v1.84
 
 ------
 
