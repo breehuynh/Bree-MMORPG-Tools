@@ -1,0 +1,16 @@
+// =======================================================================================
+// Maintained by bobatea#9400 on Discord
+// Usable for both personal and commercial projects, but no sharing or re-sale
+// * Discord Support Server.............: 
+ 
+// * Leave a star on my Github Repo.....: https://github.com/breehuynh/Bree-mmorpg-tools
+// * Instructions.......................: https://indie-mmo.net/knowledge-base/
+// =======================================================================================
+using UnityEngine;
+
+public partial class EquipmentItem : UsableItem
+{
+    [Header("-=-=- UCE Usage Requirements -=-=-")]
+    [Tooltip("While equipped, allows the usage of skills with the same ID (0 = disabled)")]
+    public int usageEquipmentId;
+}

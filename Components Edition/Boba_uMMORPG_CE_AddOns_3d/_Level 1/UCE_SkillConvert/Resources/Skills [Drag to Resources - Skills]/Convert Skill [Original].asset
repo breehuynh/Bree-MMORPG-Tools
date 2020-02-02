@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2285a3e4c194a46c3b2d7667227ba59e, type: 3}
+  m_Name: Convert Skill [Original]
+  m_EditorClassIdentifier: 
+  unlearnable: 0
+  disadvantageous: 0
+  category: 
+  uncastableWhileMounted: 0
+  followupDefaultAttack: 0
+  toolTip: Convert target monster to your Realm at a certain chance.
+  image: {fileID: 0}
+  learnDefault: 0
+  showCastBar: 0
+  cancelCastIfTargetDied: 0
+  predecessor: {fileID: 0}
+  requiresWeapon: 0
+  requiredLevel:
+    baseValue: 0
+    bonusPerLevel: 0
+  requiredSkillExperience:
+    baseValue: 0
+    bonusPerLevel: 0
+  maxLevel: 1
+  manaCosts:
+    baseValue: 1
+    bonusPerLevel: 0
+  castTime:
+    baseValue: 1
+    bonusPerLevel: 0
+  cooldown:
+    baseValue: 0
+    bonusPerLevel: 0
+  castRange:
+    baseValue: 10
+    bonusPerLevel: 0
+  successChance:
+    baseValue: 0.75
+    bonusPerLevel: 0.05
+  convertMessage: 'You converted: '
+  failedMessage: 'You failed to convert: '

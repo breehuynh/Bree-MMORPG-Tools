@@ -1,0 +1,31 @@
+{
+  "intent":"sale",
+  "redirect_urls":{
+    "return_url":"https://www.google.com",
+    "cancel_url":"https://www.google.com"
+  },
+  "payer":{
+    "payment_method":"paypal"
+  },
+  "transactions":[
+    {
+      "amount":{
+        "total":"",
+        "currency":""
+      },
+      "description": "",
+      "invoice_number": "",
+      "item_list": {
+        "items": [
+          {
+            "name": "",
+            "description": "",
+            "quantity": "1",
+            "price": "",
+            "currency":""
+          }
+        ]
+      }
+    }
+  ]
+}

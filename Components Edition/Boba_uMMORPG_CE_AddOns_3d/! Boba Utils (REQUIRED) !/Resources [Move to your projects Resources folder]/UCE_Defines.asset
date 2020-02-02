@@ -1,0 +1,591 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a31ae0e4ab59c42ea9301250c85fb24a, type: 3}
+  m_Name: UCE_Defines
+  m_EditorClassIdentifier: 
+  addons:
+  - name: UCE Attache
+    define: _iMMOATTACHE
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Attributes
+    define: _iMMOATTRIBUTES
+    basis: uMMORPG3d V1
+    author: Fhiz (Original by Iamallama)
+    version: 2019.204
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE DatabaseCleaner
+    define: _iMMODBCLEANER
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.202
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Doors
+    define: _iMMODOORS
+    basis: uMMORPG3d V1
+    author: Obscured Crow
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Emotes
+    define: _iMMOEMOTES
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Exploration
+    define: _iMMOEXPLORATION
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.202
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Help
+    define: _iMMOHELP
+    basis: uMMORPG3d V1
+    author: Obscured Crow
+    version: 2019.202
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE ItemRarity
+    define: _iMMOITEMRARITY
+    basis: uMMORPG3d V1
+    author: Obscured Crow
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Jukebox
+    define: _iMMOJUKEBOX
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE MainMenu
+    define: _iMMOMAINMENU
+    basis: uMMORPG3d V1
+    author: Obscured Crow
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE MeshSwitcher
+    define: _iMMOMESHSWITCHER
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Minion
+    define: _iMMOMINION
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE NetworkZones
+    define: _iMMOZONES
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.203
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Player Warehouse
+    define: _iMMOWAREHOUSE
+    basis: uMMORPG3d V1
+    author: Fhiz (Original by Cioa)
+    version: 2019.202
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE StatOverlays
+    define: _iMMOSTATSOVERLAY
+    basis: uMMORPG3d V1
+    author: ObscuredCrow
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Timegate
+    define: _iMMOTIMEGATE
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.202
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Travelroutes
+    define: _iMMOTRAVEL
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.202
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Bindpoint
+    define: _iMMOBINDPOINT
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.202
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE CursedEquipment
+    define: _iMMOCURSEDEQUIPMENT
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE DailyRewards
+    define: _iMMODAILYREWARDS
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.202
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Elements
+    define: _iMMOELEMENTS
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.202
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE EquipableBagItem
+    define: _iMMOEQUIPABLEBAG
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE LootRules
+    define: _iMMOLOOTRULES
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Mail
+    define: _iMMOMAIL
+    basis: uMMORPG3d V1
+    author: Fhiz (Original by Iamallama)
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE MonsterWaypoints
+    define: _iMMOMONSTERWAYPOINTS
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE NpcRestrictions
+    define: _iMMONPCRESTRICTIONS
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE PrestigeClasses
+    define: _iMMOPRESTIGECLASSES
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.202
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE PvP Zones & Realms
+    define: _iMMOPVP
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.202
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Sanctuary
+    define: _iMMOSANCTUARY
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.202
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE SkillCategories
+    define: _iMMOSKILLCATEGORY
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Teleporter
+    define: _iMMOTELEPORTER
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Timed Skill Finish
+    define: _iMMOTIMEDSKILLFINISH
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Unlockable Classes
+    define: _iMMOUNLOCKABLECLASSES
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.203
+    dependencies: UCE Character Creation
+    comments: none
+    active: 1
+  - name: UCE Usage Requirements
+    define: _iMMOUSAGEREQUIREMENTS
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Account Unlockables
+    define: _iMMOACCOUNTUNLOCKABLES
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.202
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE AdminConsole
+    define: _iMMOADMINCONSOLE
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.203
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Crafting
+    define: _iMMOCRAFTING
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.205
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE EquipmentSets
+    define: _iMMOEQUIPMENTSETS
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Factions
+    define: _iMMOFACTIONS
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.202
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Friendship
+    define: _iMMOFRIENDS
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.202
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE GuildWarehouse
+    define: _iMMOGUILDWAREHOUSE
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.203
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Harvesting
+    define: _iMMOHARVESTING
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.204
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE HonorShop & PvP Currencies
+    define: _iMMOHONORSHOP
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.202
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Lootcrate
+    define: _iMMOCHEST
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE MeleeSkills
+    define: _iMMOMELEE
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Morale
+    define: _iMMOMORALE
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.200
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Mounts
+    define: _iMMOMOUNTS
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE PayPal
+    define: _iMMOPAYPAL
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.202
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE ProjectileSkills
+    define: _iMMOPROJECTILES
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.202
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Quests
+    define: _iMMOQUESTS
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.203
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE RTS BuildSystem
+    define: _iMMOBUILDSYSTEM
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.202
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE SpeechBubbles
+    define: _iMMOSPEECHBUBBLES
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Stamina
+    define: _iMMOSTAMINA
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.200
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Statistics
+    define: _iMMOSTATISTICS
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.200
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Traits
+    define: _iMMOTRAITS
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.202
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE AssetBundleManager
+    define: _iMMOASSETBUNDLEMANAGER
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.200
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE BuffBlockHealthRecovery
+    define: _iMMOBUFFBLOCKHEALTHRECOVERY
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE BuffBlockManaRecovery
+    define: _iMMOBUFFBLOCKMANARECOVERY
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE BuffEndure
+    define: _iMMOBUFFENDURE
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE BuffExperience
+    define: _iMMOBUFFEXPERIENCE
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE BuffGold
+    define: _iMMOBUFFGOLD
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE BuffInvincibility
+    define: _iMMOBUFFINVINCIBILITY
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE ConditionalSkills
+    define: _iMMOCONDITIONALSKILLS
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.200
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE CurativeSkills
+    define: _iMMOCURATIVE
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE GuildUpgrades
+    define: _iMMOGUILDUPGRADES
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.202
+    dependencies: UCE Guild Warehouse
+    comments: none
+    active: 1
+  - name: UCE ItemDrop
+    define: _iMMOITEMDROP
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE LimitedZones
+    define: _iMMOLIMITEDZONES
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.203
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE MobileControls
+    define: _iMMOMOBILECONTROLS
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.201
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE PatreonManager
+    define: _iMMOPATREON
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.200
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE Threaded Database
+    define: _iMMOTHREADDB
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.202
+    dependencies: none
+    comments: none
+    active: 1
+  - name: UCE UMA Integration
+    define: _iMMOUMA
+    basis: uMMORPG3d V1
+    author: Pierce, ObscuredCrow
+    version: 2019.204
+    dependencies: UCE Character Creation
+    comments: none
+    active: 1
+  - name: UCE World Events
+    define: _iMMOWORLDEVENTS
+    basis: uMMORPG3d V1
+    author: Fhiz
+    version: 2019.202
+    dependencies: UCE Quests
+    comments: none
+    active: 1

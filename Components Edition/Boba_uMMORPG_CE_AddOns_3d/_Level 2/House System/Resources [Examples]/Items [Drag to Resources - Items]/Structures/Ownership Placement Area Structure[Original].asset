@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cc5232aea68d4618bb16da3e6dcd631, type: 3}
+  m_Name: Ownership Placement Area Structure[Original]
+  m_EditorClassIdentifier: 
+  maxStack: 99
+  maxDurability: 0
+  buyPrice: 2
+  sellPrice: 1
+  itemMallPrice: 1
+  sellable: 1
+  tradable: 1
+  destroyable: 1
+  toolTip: '<b>{NAME}</b>
+
+    Creates an ownership area anywhere. Permanent Objects can be spawned in the owned
+    area of their owner.'
+  image: {fileID: 21300000, guid: e368fe0b109c04710aed389eaccc1ef1, type: 3}
+  minLevel: 0
+  cooldown: 0
+  _cooldownCategory: 
+  placementObject: {fileID: 1121176712564171, guid: 31c34a546015a4d41bac6955213fce70,
+    type: 3}
+  gridObject: {fileID: 1483024274989278, guid: 4eb204514758e437aa12c2c6670adbfa, type: 3}
+  previewObject: {fileID: 1121175680663954, guid: 68287f614bd474fdfafa8fd29cebcf6d,
+    type: 3}
+  isPermanent: 1
+  placementAreaId: 0
+  restrictedAreaId: -1
+  onlyPersonalArea: 0
+  onlyGuildArea: 0
+  doNotSpawnAt:
+    serializedVersion: 2
+    m_Bits: 0
+  guildRankRequired: 0
+  guildRank: 0
+  cannotBePlaced: You cannot place that there!
+  placementTime: 2
+  decreaseAmount: 1
