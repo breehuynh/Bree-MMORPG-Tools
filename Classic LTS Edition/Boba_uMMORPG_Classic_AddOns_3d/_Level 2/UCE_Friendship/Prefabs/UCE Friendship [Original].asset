@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b402a987284ed423fafe30638228d9d5, type: 3}
+  m_Name: UCE Friendship [Original]
+  m_EditorClassIdentifier: 
+  maxFriends: 50
+  honorCurrency: {fileID: 11400000, guid: dcf38710135824e0e9190d57a2687436, type: 2}
+  amount: 2
+  friendHonorCurrency: {fileID: 11400000, guid: dcf38710135824e0e9190d57a2687436,
+    type: 2}
+  friendAmount: 1
+  timespanHours: 1
+  msgMaxFriends: You cannot have anymore friends!
+  msgIsNowFriend: '{0} is now your friend.'
+  msgIsAlreadyFriend: '{0} is already your friend'
+  msgCannotFriendSelf: You cannot add yourself as a friend.
+  msgTargetOffline: '{0} is not online.'
+  msgTargetNotExist: A player {0} does not exist.
+  msgNoLongerFriend: '{0} is no longer your friend.'
+  msgTargetNotFriend: '{0} is not your friend.'
+  msgTargetHugged: You hugged {0} and gained {1} {2}.

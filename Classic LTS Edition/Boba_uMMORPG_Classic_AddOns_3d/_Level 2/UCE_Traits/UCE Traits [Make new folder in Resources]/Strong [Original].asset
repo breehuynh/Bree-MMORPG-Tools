@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab37434756f14eae8c04b0174feb68f, type: 3}
+  m_Name: Strong [Original]
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: b3a8aae6881b54baaa3864ecb1d0c7c7, type: 3}
+  toolTip: 'Strong (1 Point)
+
+    Increases Strength by one point.'
+  traitCost: 1
+  uniqueGroup: 2
+  allowedClasses: []
+  startingSkills: []
+  startingItems: []
+  startingPrestigeClass: {fileID: 0}
+  startingHonorCurrency: []
+  startingFactions: []
+  startingCraftingProfession: []
+  startingHarvestingProfession: []
+  UCE_AttributeModifiers:
+  - template: {fileID: 11400000, guid: 65cb7175eba71477cb148a477f8bcc4e, type: 2}
+    percentBonus: 0
+    flatBonus: 1
+  elementalResistances: []
+  healthBonus: 0
+  manaBonus: 0
+  damageBonus: 0
+  defenseBonus: 0
+  blockChanceBonus: 0
+  criticalChanceBonus: 0
+  bonusBlockFactor: 0
+  bonusCriticalFactor: 0
+  bonusDrainHealthFactor: 0
+  bonusDrainManaFactor: 0
+  bonusReflectDamageFactor: 0
+  bonusDefenseBreakFactor: 0
+  bonusBlockBreakFactor: 0
+  bonusCriticalEvasion: 0

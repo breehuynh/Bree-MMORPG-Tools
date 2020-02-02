@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b41704439059f6949820bbd2c6d6cdc7, type: 3}
+  m_Name: Vitality [Original]
+  m_EditorClassIdentifier: 
+  toolTip: '<b>{NAME}</b>
+
+    This is a customizeable player attribute.
+
+
+    Adds {PERCENTHEALTH}% health per point.
+
+    Adds {FLATHEALTH} points of health per point.
+
+
+    Adds {PERCENTMANA}% mana per point.
+
+    Adds {FLATMANA} points of mana per point.
+
+
+    Adds {PERCENTDAMAGE}% damage per point.
+
+    Adds {FLATDAMAGE} points of damage per point.
+
+
+    Adds {PERCENTDEFENSE}% defense per point.
+
+    Adds {FLATDEFENSE} points of defense per point.
+
+
+    Adds {PERCENTBLOCK}% block chance per point.
+
+    Adds {FLATBLOCK} points of block chance per point.
+
+
+    Adds {PERCENTCRITICAL}% critical chance per point.
+
+    Adds {FLATCRITICAL} points of critical chance per point.
+
+
+    Adds {PERCENTBLOCKFACTOR}% block power per point.
+
+    Adds {FLATBLOCKFACTOR} points of block power per point.
+
+
+    Adds {PERCENTCRITICALFACTOR}% critical power per point.
+
+    Adds {FLATCRITICALFACTOR} points of critical power per point.
+
+
+    Adds {PERCENTACCURACY}% accuracy  per point.
+
+    Adds {FLATACCURACY} points of accuracy per point.
+
+
+    Adds {PERCENTRESISTANCE}% resistance per point.
+
+    Adds {FLATRESISTANCE} points of resistance per point.
+
+
+    Adds {PERCENTDRAINHEALTHFACTOR}% drain health per point.
+
+    Adds {FLATDRAINHEALTHFACTOR} points of drain health per point.
+
+
+    Adds {PERCENTDRAINMANAFACTOR}% drain mana per point.
+
+    Adds {FLATDRAINMANAFACTOR} points of drain mana per point.
+
+
+    Adds {PERCENTREFLECTDAMAGEFACTOR}% reflect damage per point.
+
+    Adds {FLATREFLECTDAMAGEFACTOR} points of reflect damage per point.
+
+
+    Adds {PERCENTDEFENSEBREAKFACTOR}% defense break per point.
+
+    Adds {FLATDEFENSEBREAKFACTOR} points of defense break per point.
+
+
+    Adds {PERCENTBLOCKBREAKFACTOR}% block break per point.
+
+    Adds {FLATBLOCKBREAKFACTOR} points of block break per point.
+
+
+    Adds {PERCENTCRITICALEVASION}% critical evasion per point.
+
+    Adds {FLATCRITICALEVASION} points of critical evasion per point.'
+  image: {fileID: 21300000, guid: 7deae6ba30781482682c7529186e1eb3, type: 3}
+  percentHealth: 0.01
+  flatHealth: 0
+  percentMana: 0
+  flatMana: 0
+  percentDamage: 0
+  flatDamage: 0
+  percentDefense: 0
+  flatDefense: 0
+  percentBlock: 0
+  flatBlock: 0
+  percentCritical: 0
+  flatCritical: 0
+  percentBlockFactor: 0
+  flatBlockFactor: 0
+  percentCriticalFactor: 0
+  flatCriticalFactor: 0
+  percentAccuracy: 0
+  flatAccuracy: 0
+  percentResistance: 0
+  flatResistance: 0
+  percentDrainHealthFactor: 0
+  flatDrainHealthFactor: 0
+  percentDrainManaFactor: 0
+  flatDrainManaFactor: 0
+  percentReflectDamageFactor: 0
+  flatReflectDamageFactor: 0
+  percentDefenseBreakFactor: 0
+  flatDefenseBreakFactor: 0
+  percentBlockBreakFactor: 0
+  flatBlockBreakFactor: 0
+  percentCriticalEvasion: 0
+  flatCriticalEvasion: 0

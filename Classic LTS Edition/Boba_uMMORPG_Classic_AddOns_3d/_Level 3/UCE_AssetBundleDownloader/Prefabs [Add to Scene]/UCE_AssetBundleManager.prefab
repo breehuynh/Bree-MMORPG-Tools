@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2995027564499658321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7770886053142665566}
+  - component: {fileID: 1505948780606578532}
+  - component: {fileID: 3020989008077323773}
+  m_Layer: 0
+  m_Name: UCE_AssetBundleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7770886053142665566
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2995027564499658321}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1505948780606578532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2995027564499658321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c9c3a5a118574cc0a6a2e7cc2d2a4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BundlesBaseUrl: http://127.0.0.1:8000
+  BundlesBasePath: Assets/StreamingAssets
+  DisableHTTPServerCache: 1
+  TestMode: 0
+  BuildIosBundle: 0
+  BuildAndroidBundle: 0
+  BuildOSXBundle: 0
+  BuildWindowsBundle: 0
+  BuildVersions:
+    _Buckets: ffffffff060000000100000003000000020000000500000004000000
+    _HashCodes: 06f28a0e0d39d03b5d8c3d5aa02e5742a32e5742a22e5742a52e5742
+    _Next: ffffffffffffffff00000000ffffffffffffffffffffffffffffffff
+    _Count: 7
+    _Version: 1134
+    _FreeList: -1
+    _FreeCount: 0
+    _Keys:
+    - images.hd
+    - images.sd
+    - scenes
+    - scenes_s1
+    - scenes_s2
+    - scenes_s3
+    - scenes_s4
+    _Values: 00000000000000000000000000000000000000000000000000000000
+--- !u!114 &3020989008077323773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2995027564499658321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fecf900e1813416ba4de453be9715ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
