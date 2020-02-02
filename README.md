@@ -6,7 +6,7 @@
 
 ------
 
-## Boba uMMORPG CE (BETA Release) v2.1
+## Boba uMMORPG CE (BETA Release) v2.4
   
 ------
   
