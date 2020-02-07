@@ -8,12 +8,19 @@
 
 ## Boba uMMORPG CE (BETA Release) v2.4
 **Change Log (2/6/2020)** 
-- hi
+- Updated to 2.4
+- Added knowledge-base.zip
+- Added README Component Based instructions
+- bug fixes
 
 ------
   
 ## Boba uMMORPG Classic (LTS Release) v1.84
-
+**Change Log (2/6/2020)** 
+- Updated to 1.84
+- Added knowledge-base.zip
+- Added README
+- bug fixes
 ------
 
 ### Contact Information
