@@ -7,7 +7,7 @@
 ------
 
 ## Boba uMMORPG CE (BETA Release) v2.4
-### Change log: 
+**Change log:** 
 - hi
 ------
   
