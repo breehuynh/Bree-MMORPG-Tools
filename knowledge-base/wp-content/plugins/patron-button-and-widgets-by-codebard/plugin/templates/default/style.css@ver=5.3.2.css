@@ -1,0 +1,442 @@
+.cb_p6_reply_wrapper{
+	
+	width : 100%;
+	display : inline-table;
+	vertical-align : top;
+
+	
+}
+.cb_p6_user_avatar{
+	width : 80px;
+	display : table-cell;
+	text-align : center;
+	vertical-align : top;
+}
+.cb_p6_reply_content_row{
+	height : 100%;
+	display : table-cell;
+	vertical-align : top;
+	width : auto;
+	padding-left: 5px;
+	padding-right: 5px;
+	
+}
+.cb_p6_reply_content{
+	height : auto;
+	min-height : 40px;
+	display : inline-block;
+	vertical-align : top;
+	width : 100%;
+	
+}
+
+.cb_p6_clearfix:after {
+   content: " "; /* Older browsers do not support empty content - from stackoverflow */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+
+.cb_p6_clearfix_separator {
+	
+	display:block;
+	width :100%;
+	margin-top : 20px;
+	margin-bottom : 20px;
+	border-bottom : 1px solid #c0c0c0;
+	
+}
+
+.cb_p6_clearfix_separator:after {
+   content: " "; /* Older browsers do not support empty content - from stackoverflow */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+
+.cb_p6_notice {
+    margin: 10px 0px;
+    padding:5px;
+	padding-left : 10px;
+	vertical-align : middle;
+}
+.cb_p6_notice-info {
+    color: #00529B;
+    background-color: #BDE5F8;
+}
+.cb_p6_notice-success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+.cb_p6_notice-warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+.cb_p6_notice-error {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+
+.cb_p6_support_bar{
+	display : block;
+	margin-bottom : 25px;
+	text-align : left;
+	vertical-align : middle;
+	
+	
+}
+.cb_p6_support_bar button{
+	margin:3px;
+	display : inline-block;
+	
+}
+.cb_p6_agent_admin_operations_bar{
+	display : block;
+	margin-bottom : 25px;
+	text-align : center;
+	vertical-align : middle;
+	
+	
+}
+.cb_p6_agent_admin_operations_bar button{
+	margin:3px;
+	display : inline-block;
+	
+}
+
+#cb_p6_agent_ticket_header{
+	display :table;
+	width :100%;
+	margin-top : 20px;
+	margin-bottom : 20px;
+}
+.cb_p6_agent_ticket_row{
+	display :table-row;
+	width :100%;
+}
+.cb_p6_agent_ticket_heading{
+	display :table-cell;
+	width :25%;
+	background-color : #dee1e5;
+	padding : 5px;
+	padding-left : 15px;
+	
+}
+.cb_p6_agent_ticket_cell{
+	display :table-cell;
+	width :25%;
+	border : 1px solid #c3c5c9;
+	padding : 5px;
+	padding-left : 15px;
+	
+
+}
+
+.cb_p6_ticket_reply_textarea{
+	display : inline-block;
+	min-width : 200px;
+	max-width : 500px;
+	width : 100%;
+	height: auto;
+	min-height : 100px;
+	
+	
+	
+}
+
+.cb_p6_agent_ticket_listing_ticket_info{
+	display : inline-block;
+	width : 100%;
+	margin-top : 5px;
+	font-size : 85%;
+	vertical-align :bottom;
+	
+}
+
+.cb_p6_agent_ticket_listing_ticket_title_link{
+	font-size : 120%;
+		
+		
+}
+
+
+.cb_p6_agent_ticket_listing_entry{
+
+	display :inline-block;
+	width : 100%;
+
+	margin-top : 0px;	
+	margin-bottom : 0px;	
+	padding-bottom : 10px;	
+	padding-top : 10px;	
+	padding-left : 10px;
+	padding-right : 10px;
+
+	border-bottom : 1px solid #c0c0c0;
+		
+
+}
+.cb_p6_agent_ticket_listing_entry:hover{
+	
+	cursor:pointer;
+	background: rgba(0,0,0,.1);
+	
+	
+}
+
+
+
+
+.cb_p6_agent_ticket_listing_upper_row_wrapper{
+	
+	display:inline-table;
+	width : 100%;
+	margin : 0px;
+	padding : 0px;
+	
+	
+}
+
+
+.cb_p6_agent_ticket_listing_ticket_title{
+	
+	display:inline-block;
+	width : 80%;
+	margin : 0px;
+	padding : 0px;
+	
+	
+}
+
+.cb_p6_agent_ticket_listing_view_ticket_button{
+	
+	display:inline-block;
+	width : auto;
+	max-width : 120px;
+	margin : 0px;
+	padding : 0px;
+	
+	
+}
+
+
+.cb_p6_user_ticket_listing_ticket_info{
+	display : inline-block;
+	width : 100%;
+	margin-top : 5px;
+	font-size : 85%;
+	vertical-align :bottom;
+	
+}
+
+.cb_p6_user_ticket_listing_ticket_title_link{
+	font-size : 120%;
+		
+		
+}
+
+
+.cb_p6_user_ticket_listing_entry{
+
+	display :inline-block;
+	width : 100%;
+
+	margin-top : 0px;	
+	margin-bottom : 0px;	
+	padding-bottom : 10px;	
+	padding-top : 10px;	
+	padding-left : 10px;
+	padding-right : 10px;
+
+	border-bottom : 1px solid #c0c0c0;
+	
+		
+
+}
+.cb_p6_user_ticket_listing_entry:hover{
+	
+	cursor:pointer;
+	background: rgba(0,0,0,.1);
+	
+	
+}
+
+
+
+
+.cb_p6_user_ticket_listing_upper_row_wrapper{
+	
+	display:inline-table;
+	width : 100%;
+	margin : 0px;
+	padding : 0px;
+	
+	
+}
+
+
+.cb_p6_user_ticket_listing_ticket_title{
+	
+	display:inline-block;
+	width : 80%;
+	margin : 0px;
+	padding : 0px;
+	
+	
+}
+
+.cb_p6_user_ticket_listing_view_ticket_button{
+	
+	display:inline-block;
+	width : auto;
+	max-width : 120px;
+	margin : 0px;
+	padding : 0px;
+	
+	
+}
+
+
+
+
+.cb_p6_agent_updated_since_last_visit{
+	
+	background: rgba(54,198,35,.1);
+	
+	
+}
+
+
+
+.cb_p6_separator{
+	
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both; 
+   margin-top : 10px;   
+   margin-bottom : 10px;   
+
+}
+
+
+.cb_p6_quick_reply_button{
+	
+	display:inline-block;
+	margin-top : 10px;
+	margin-bottom : 10px;
+	
+	
+}
+
+.cb_p6_quick_reply_button{
+	
+	display:inline-block;
+	margin-top : 10px;
+	margin-bottom : 10px;
+	
+	
+}
+
+
+.cb_p6_ticket_attachment{
+	
+	font-size : 75%;
+	
+}
+.cb_p6_ticket_attachment_label{
+	
+	font-size : 75%;
+	margin-right : 10px;
+	
+	
+}
+
+.cb_p6_reply_attachments{
+	
+	width : 100%;
+	display:inline-block;
+	border-top : 1px solid #c0c0c0;
+	margin-top : 10px;
+	padding-top : 10px;
+	
+}
+.cb_p6_reply_attachments img{
+	
+	max-width : 300px;
+	
+	
+}
+
+.cb_p6_ticket_status_button_container {
+	
+	display : inline-block;
+	max-height : 60px;
+	vertical-align : middle;
+	
+}
+
+
+.cb_p6_ticket_status_label {
+	
+	
+	display : inline-block;
+	max-height : 60px;
+	vertical-align : middle;
+	margin-right : 15px;
+	font-weight : bold;
+	
+	
+}
+
+.cb_p6_ticket_status_row {
+	
+	
+	display : inline-block;
+	margin-bottom : 10px;
+	vertical-align : middle;
+	
+	
+}
+
+#cb_p6_department_select {
+	
+	
+	display : inline-block;
+	margin-bottom : 20px;
+	margin-top : 15px;
+	vertical-align : middle;
+	
+	
+}
+#cb_p6_department_select select {
+	
+	font-size : 125%;
+	
+	
+}
+
+#cb_p6_create_ticket_form {
+	
+	display:inline-block;
+	margin-bottom : 20px;
+	
+	
+}
+
+.cb_p6_ticket_listing_header {
+	
+	display:block;
+	margin-bottom : 20px;
+	margin-top : 20px;
+	padding-left : 5px;
+	padding-right : 5px;
+	
+	
+}
+
