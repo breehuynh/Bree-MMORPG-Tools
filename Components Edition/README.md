@@ -1,10 +1,15 @@
 
 # Instructions
 1. Install the knowledge-base.zip
-2. Looks for Tools in the Knowledge Base and follow the instructions to install UCE_Tools
-3. Install any other plugin/addon you wish and search through the knowledge base for the respective instructions
-4. Once you followed the steps from the knowledge base for the addon you wish to install, you need to proceed with these following steps to properly complete the addon installation for the Components Edition
-5. Open up your preferred IDE/External Editor for Unity and open up your Unity Project. Or just double click any script in your Unity Project.
+2. Looks for Tools (UCE Tools) in the Knowledge Base and follow the same instructions to install Boba Utils
+3. Once you followed the steps for UCE Tools, in order to finish the installation for Boba Utils you need to proceed with the following steps.
+4. Open up ExampleDevExtMethods.cs and read and follow the instructions. This is how I will be adding functionality to the core with minimal core changes. As you can see, it is very similar to the Utils Hook ons from the Classic Edition, but these hooks are much more optimized and faster.
+5. Congrats! You've installed Boba Utils for your project. Every addon will use these utilities.
+
+
+6. Now that you've installed Boba Utils, the following steps will guide you through how to install the Component Edition addons.
+7. Install any Component Edition addon you wish and search through the knowledge base for your respective addon.
 6. Press this combination to search through your project solution: Ctrl+Shift+F (CMD+Shift+F for Mac)
-7. Look for DevExtMethods
-8. Then
+6. Search for DevExtMethods
+7. Then
+8. Install any other plugin/addon you wish and search through the knowledge base for the respective instructions
