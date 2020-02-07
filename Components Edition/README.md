@@ -10,7 +10,7 @@
 
 ## Component Edition Addons Installation 
 6. Now that you've installed Boba Utils, the following steps will guide you through how to install the Component Edition addons.
-7. Install any Component Edition addon you wish and search through the knowledge base for your respective addon.
+7. Download any Component Edition addon you wish and search through the knowledge base for the instructions to install your respective addon.
 6. Press this combination to search through your project solution: Ctrl+Shift+F (CMD+Shift+F for Mac)
 6. Search for DevExtMethods
 7. Then
