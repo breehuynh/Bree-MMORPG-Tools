@@ -13,7 +13,17 @@
 7. Download any Component Edition addon you wish and search through the Knowledge Base for the instructions to install your respective addon.
 8. Once you've followed the installation steps from the Knowledge Base for your addon, proceed with the following steps.
 9. Double click any script in your Unity Project in order to open up your External IDE. 
-9. Press this combination to search through your project solution: Ctrl+Shift+F (CMD+Shift+F for Mac)
-6. Search for DevExtMethods
-7. Then
-8. Install any other plugin/addon you wish and search through the knowledge base for the respective instructions
+10. Press this combination to search through your project solution: Ctrl+Shift+F (CMD+Shift+F for Mac)
+11. Search for DevExtMethods
+12. If you do not see anything then that means you've completely finish the installation for your addon. Go play!
+13. If not, then you will need to follow the steps similar to the ones in ExampleDevExtMethods.
+14. For example, click on any DevExtMethod from your search results.
+15. In the script, you will see methods with a \[DevExtMethod] attribute. Remember the name of this method.
+16. Go to the top of the script and look for the class name. For instance, it may be called "public partial class Player"
+17. In that case, open up Player.cs and look for the same method with the same prefix of the method name that I told you to memorize.
+18. Add the invoke hook (look through the methods in ExampleDevExtMethods.cs for examples on how to do this).
+19. You will need to add these invoke hooks for every DevExtMethod in your addon.
+20. Congrats! Once you've added all these DevExtMethod hooks, you've successfully installed your Component Edition addon. Whew! 
+
+I know. It's a lot more work than the Classic Edition addons. Another alternative is manually looking through the DevExtMethods and adding in the Events via the inspector individually. I don't like this method but it's up to you.
+
