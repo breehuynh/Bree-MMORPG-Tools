@@ -7,4 +7,4 @@
 5. Open up your preferred IDE/External Editor for Unity and open up your Unity Project. Or just double click any script in your Unity Project.
 6. Press this combination to search through your project solution: Ctrl+Shift+F (CMD+Shift+F for Mac)
 7. Look for DevExtMethods
-8. 
+8. Then
